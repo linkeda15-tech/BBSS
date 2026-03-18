@@ -1,0 +1,128 @@
+Code(Dec),Code(Hex),訊息,發生原因,異常排除方法,Message,Reason,Solution,Remark
+0,0,讀取DIO卡發生錯誤,,,,,,MTEST
+1,1,讀取AIO#0卡發生錯誤,,,,,,MTEST
+2,2,讀取AIO#1卡發生錯誤,,,,,,MTEST
+3,3,驅動端伺服馬達發生錯誤,,,,,,MTEST
+4,4,負載端伺服馬達發生錯誤,,,,,,MTEST
+5,5,驅動端伺服馬達通訊錯誤,,,,,,MTEST
+6,6,負載端伺服馬達通訊錯誤,,,,,,MTEST
+7,7,扭力計通訊錯誤,,,,,,MTEST
+8,8,轉速高於保護上限,,,,,,MTEST
+9,9,扭力高於保護上限,,,,,,MTEST
+10,A,功率高於保護上限,,,,,,MTEST
+11,B,緊急停止,,,,,,MTEST
+13,D,CAN通訊錯誤,CAN通訊錯誤,檢查通訊，再由軟體重置,CAN Communcation Timeout,,,MTEST
+14,E,扭力值低於下限,扭力值偵測低於下限,檢查參數設定扭力下限的設定值是否過高，再由軟體重置,Torque value below the lowerlimit,,,MTEST DC1500 Only
+15,F,速度高於上限,轉速值偵測高於上限,檢查馬達的轉速值，再由軟體重置,Speed over the upperlimit,,,MTEST DC1500 Only
+16,10,速度高於下限,轉速值偵測高於下限,檢查馬達的轉速值，再由軟體重置,Speed below the lowerlimit,,,MTEST DC1500 Only
+17,11,通道0溫度高於上限,量測的溫度已達軟體設定的上限，,檢查待測物是否異常，再由軟體重置,Channel 0 Temperature over the upperlimit,,,MTEST DC1500 Only
+18,12,通道0溫度低於下限,量測的溫度已達軟體設定的下限,檢查待測物是否異常，再由軟體重置,Channel 0 Temperature below the lowerlimit,,,MTEST DC1500 Only
+19,13,通道1溫度高於上限,量測的溫度已達軟體設定的上限,檢查待測物是否異常，再由軟體重置,Channel 1 Temperature over the upperlimit,,,MTEST DC1500 Only
+20,14,通道1溫度低於下限,量測的溫度已達軟體設定的下限,檢查待測物是否異常，再由軟體重置,Channel 1 Temperature below the lowerlimit,,,MTEST DC1500 Only
+21,15,通道2溫度高於上限,量測的溫度已達軟體設定的上限,檢查待測物是否異常，再由軟體重置,Channel 2 Temperature over the upperlimit,,,MTEST DC1500 Only
+22,16,通道2溫度低於下限,量測的溫度已達軟體設定的下限,檢查待測物是否異常，再由軟體重置,Channel 2 Temperature below the lowerlimit,,,MTEST DC1500 Only
+23,17,通道3溫度高於上限,量測的溫度已達軟體設定的上限,檢查待測物是否異常，再由軟體重置,Channel 3 Temperature over the upperlimit,,,MTEST DC1500 Only
+24,18,通道3溫度低於下限,量測的溫度已達軟體設定的下限,檢查待測物是否異常，再由軟體重置,Channel 3 Temperature below the lowerlimit,,,MTEST DC1500 Only
+25,19,功率於下限,設定功率下限的設定值是否過低,檢查待測物是否異常，再由軟體重置,Power out below the lowerlimit,,,MTEST DC1500 Only
+26,1A,DC1500控制器通訊異常,DC1500控制器通訊異常,檢查通訊是否設定正確，再由軟體重置,Controller Communications Error,,,MTEST DC1500 Only
+27,1B,,,,,,,
+28,1C,,,,,,,
+29,1D,,,,,,,
+30,1E,電流超出檔位設定值(前端),電流超出檔位設定值,選擇合適的電流檔位，再由軟體重置,The current range over (Font),,,MTEST
+31,1F,電流超出檔位設定值(後端),電流超出檔位設定值,選擇合適的電流檔位，再由軟體重置,The current range over (Back),,,MTEST
+32,20,,,,,,,
+33,21,,,,,,,
+34,22,,,,,,,
+35,23,,,,,,,
+36,24,,,,,,,
+37,25,,,,,,,
+38,26,,,,,,,
+39,27,,,,,,,
+40,28,輸出扭力過載(達參數設定上限),扭力加載大於保護設定值,由軟體重置,Torque Overload(Over Recipe Range),,,MTEST
+41,29,,,,,,,
+42,2A,,,,,,,
+43,2B,,,,,,,
+44,2C,,,,,,,
+45,2D,,,,,,,
+46,2E,,,,,,,
+47,2F,,,,,,,
+48,30,,,,,,,
+49,31,,,,,,,
+50,32,電源供應器1通訊異常,,請檢查通訊,Power Supply 1 Communcation Timeout,,,
+51,33,電源供應器2通訊異常,,請檢查通訊,Power Supply 2 Communcation Timeout,,,
+52,34,電力分析儀通訊異常(前端),,請檢查通訊,Power Meter Communcation Timeout (Font),,,
+53,35,電力分析儀通訊異常(後端),,請檢查通訊,Power Meter Communcation Timeout (Back),,,
+54,36,微阻計通訊異常,,請檢查通訊,Resistance Meter Communcation Timeout,,,
+55,37,溫度卡1通訊異常,,請檢查通訊,Temp. Meter 1 Communcation Timeout,,,
+56,38,溫度卡2通訊異常,,請檢查通訊,Temp. Meter 2 Communcation Timeout,,,
+57,39,扭力計通訊異常,,請檢查通訊,Torque Meter Communcation Timeout,,,
+58,3A,PLC通訊異常,,請檢查通訊,PLC Communcation Timeout,,,
+59,3B,電源供應器1異常,,請檢查後再重置電源供應器,Power Supply 1 Alarm,,,
+60,3C,電源供應器2異常,,請檢查通訊,Power Supply 2 Alarm,,,
+61,3D,電力分析儀異常(前端),,請檢查通訊,Power Meter Alarm (Font),,,
+62,3E,電力分析儀異常(後端),,請檢查通訊,Power Meter Alarm (Back),,,
+63,3F,微阻計異常,,請檢查通訊,Resistance Meter Alarm,,,
+64,40,溫度卡1異常,,,Temp. Meter 1 Alarm,,,
+65,41,溫度卡2異常,,,Temp. Meter 2 Alarm,,,
+66,42,扭力計異常,,,Torque Meter Alarm,,,
+67,43,PLC異常,,,PLC Alarm,,,
+68,44,PLC通訊逾時,,,PLC Communcation Timeout,,,
+69,45,Driver通訊逾時,,,Driver Communcation Timeout,,,
+70,46,,,,,,,
+71,47,,,,,,,
+72,48,,,,,,,
+73,49,,,,,,,
+74,4A,,,,,,,
+75,4B,,,,,,,
+76,4C,,,,,,,
+77,4D,,,,,,,
+78,4E,,,,,,,
+79,4F,,,,,,,
+80,50,I/O卡未正確安裝(PCI or PCIE),此電腦未安裝卡片或是卡片的金手指需要清潔,電腦關機後將卡片移除並清除金手指，完成後再重新安裝卡片,,,,
+81,51,A/D未正確安裝(PCI or PCIE),此電腦未安裝卡片或是卡片的金手指需要清潔,電腦關機後將卡片移除並清除金手指，完成後再重新安裝卡片,,,,
+82,52,,,,,,,
+83,53,,,,,,,
+84,54,,,,,,,
+85,55,,,,,,,
+86,56,,,,,,,
+87,57,,,,,,,
+88,58,,,,,,,
+89,59,,,,,,,
+90,5A,電流超出上下限(連續計數),,,,,,
+91,5B,電流超出上下限(總計計數),,,,,,
+92,5C,轉速超出上下限,,,,,,
+93,5D,馬達齒輪未復歸(連續計數),,,,,,
+94,5E,馬達齒輪未復歸(總計計數),,,,,,
+95,5F,,,,,,,
+96,60,,,,,,,
+97,61,,,,,,,
+98,62,,,,,,,
+99,63,,,,,,,
+100,64,溫度量測超出上限(CH0),,,,,,
+101,65,溫度量測超出上限(CH1),,,,,,
+102,66,溫度量測超出上限(CH2),,,,,,
+103,67,溫度量測超出上限(CH3),,,,,,
+104,68,,,,,,,
+105,69,,,,,,,
+106,6A,,,,,,,
+107,6B,,,,,,,
+108,6C,,,,,,,
+109,6D,,,,,,,
+110,6E,,,,,,,
+111,6F,,,,,,,
+112,70,,,,,,,
+113,71,,,,,,,
+114,72,,,,,,,
+115,73,,,,,,,
+116,74,,,,,,,
+117,75,,,,,,,
+118,76,,,,,,,
+119,77,,,,,,,
+120,78,,,,,,,
+121,79,,,,,,,
+122,7A,,,,,,,
+123,7B,,,,,,,
+124,7C,,,,,,,
+125,7D,,,,,,,
+126,7E,,,,,,,
+127,7F,,,,,,,
