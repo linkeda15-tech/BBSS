@@ -44,6 +44,10 @@
 			<Item Name="TestParameter.ctl" Type="VI" URL="../MFActor/TestParameter.ctl"/>
 			<Item Name="TestSinWaveStep.ctl" Type="VI" URL="../TestSinWave Actor/TestSinWaveStep.ctl"/>
 			<Item Name="TCPIPProcStep.ctl" Type="VI" URL="../TCPIP Actor/TCPIPProcStep.ctl"/>
+			<Item Name="PW3390Func.ctl" Type="VI" URL="../PW3390 Actor/PW3390Func.ctl"/>
+			<Item Name="DeviceAlias.ctl" Type="VI" URL="../MFActor/DeviceAlias.ctl"/>
+			<Item Name="PlotTestDataStep.ctl" Type="VI" URL="../TestFlow/PlotTestDataStep.ctl"/>
+			<Item Name="PW3390MsgFunc.ctl" Type="VI" URL="../PW3390 Actor/ActorMessage/PW3390MsgFunc.ctl"/>
 		</Item>
 		<Item Name="4503 Actor.lvlib" Type="Library" URL="../4503 Actor/4503 Actor.lvlib"/>
 		<Item Name="aaaaa.vi" Type="VI" URL="../MFActor/MFActor/aaaaa.vi"/>
@@ -71,6 +75,9 @@
 		<Item Name="Untitled 1.vi" Type="VI" URL="../Untitled 1.vi"/>
 		<Item Name="TCPIPCommunication.vi" Type="VI" URL="../0_Comm/TCPIPCommunication.vi"/>
 		<Item Name="ReportTemplate.xls" Type="Document" URL="../ReportTemplate.xls"/>
+		<Item Name="GetDataColumn.vi" Type="VI" URL="../0_Comm/GetDataColumn.vi"/>
+		<Item Name="PW3390 Actor.lvlib" Type="Library" URL="../PW3390 Actor/PW3390 Actor.lvlib"/>
+		<Item Name="PlotTestData.vi" Type="VI" URL="../TestFlow/PlotTestData.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="BioIsFailed.vi" Type="VI" URL="/&lt;userlib&gt;/_express/AdvComponent/BioIsFailed.vi"/>
@@ -393,6 +400,15 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
+			<Item Name="HIOKI3390 Read_Write.vi" Type="VI" URL="../ref/3390_Cmd.llb/HIOKI3390 Read_Write.vi"/>
+			<Item Name="HIOKI3390 ESR.vi" Type="VI" URL="../ref/3390_Cmd.llb/HIOKI3390 ESR.vi"/>
+			<Item Name="HIOKI3390 Initialize.vi" Type="VI" URL="../ref/3390_Cmd.llb/HIOKI3390 Initialize.vi"/>
+			<Item Name="HIOKI3390 Integrate_Reset.vi" Type="VI" URL="../ref/3390_Cmd.llb/HIOKI3390 Integrate_Reset.vi"/>
+			<Item Name="HIOKI3390 Integrate_Stop.vi" Type="VI" URL="../ref/3390_Cmd.llb/HIOKI3390 Integrate_Stop.vi"/>
+			<Item Name="HIOKI3390 Conf MODE.vi" Type="VI" URL="../ref/3390_Cmd.llb/HIOKI3390 Conf MODE.vi"/>
+			<Item Name="HIOKI3390 Integrate_Start.vi" Type="VI" URL="../ref/3390_Cmd.llb/HIOKI3390 Integrate_Start.vi"/>
+			<Item Name="HIOKI3390 Measure.vi" Type="VI" URL="../ref/3390_Cmd.llb/HIOKI3390 Measure.vi"/>
+			<Item Name="HIOKI3390 Close.vi" Type="VI" URL="../ref/3390_Cmd.llb/HIOKI3390 Close.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="BBTest" Type="EXE">
