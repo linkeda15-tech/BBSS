@@ -48,6 +48,7 @@
 			<Item Name="DeviceAlias.ctl" Type="VI" URL="../MFActor/DeviceAlias.ctl"/>
 			<Item Name="PlotTestDataStep.ctl" Type="VI" URL="../TestFlow/PlotTestDataStep.ctl"/>
 			<Item Name="PW3390MsgFunc.ctl" Type="VI" URL="../PW3390 Actor/ActorMessage/PW3390MsgFunc.ctl"/>
+			<Item Name="NestedActorName.ctl" Type="VI" URL="../MFActor/NestedActorName.ctl"/>
 		</Item>
 		<Item Name="4503 Actor.lvlib" Type="Library" URL="../4503 Actor/4503 Actor.lvlib"/>
 		<Item Name="aaaaa.vi" Type="VI" URL="../MFActor/MFActor/aaaaa.vi"/>
@@ -62,7 +63,6 @@
 		<Item Name="MFActor.lvlib" Type="Library" URL="../MFActor/MFActor.lvlib"/>
 		<Item Name="PID Actor.lvlib" Type="Library" URL="../PID Actor/PID Actor.lvlib"/>
 		<Item Name="ReadRecipe.vi" Type="VI" URL="../0_Comm/ReadRecipe.vi"/>
-		<Item Name="RED Actor.lvlib" Type="Library" URL="../RecipeEditor Actor/RED Actor.lvlib"/>
 		<Item Name="RefreshAutoUI.vi" Type="VI" URL="../TestFlow/RefreshAutoUI.vi"/>
 		<Item Name="SelectFileType.vi" Type="VI" URL="../ref/SelectFileType.vi"/>
 		<Item Name="SyncPIDAdjValue.vi" Type="VI" URL="../0_Comm/SyncPIDAdjValue.vi"/>
@@ -408,7 +408,8 @@
 			<Item Name="DAQNavi_LV.dll" Type="Document" URL="DAQNavi_LV.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="AdvLvDaq.dll" Type="Document" URL="/C/Windows/System32/AdvLvDaq.dll"/>
+			<Item Name="AdvLvDaq.dll" Type="Document" URL="../../../../../../../../../../Windows/System32/AdvLvDaq.dll"/>
+			<Item Name="RED Actor.lvlib" Type="Library" URL="../RecipeEditor Actor/RED Actor.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="BBTest" Type="EXE">
@@ -466,7 +467,7 @@
 				<Property Name="Source[14].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[14].type" Type="Str">VI</Property>
 				<Property Name="Source[15].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[15].itemID" Type="Ref">/My Computer/RED Actor.lvlib</Property>
+				<Property Name="Source[15].itemID" Type="Ref">/My Computer/Dependencies/RED Actor.lvlib</Property>
 				<Property Name="Source[15].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[15].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[15].type" Type="Str">Library</Property>
