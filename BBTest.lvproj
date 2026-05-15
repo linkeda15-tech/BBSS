@@ -361,6 +361,7 @@
 				<Item Name="DTbl Digital to Binary U32.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital to Binary U32.vi"/>
 				<Item Name="DWDT Digital to Binary U16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Digital to Binary U16.vi"/>
 				<Item Name="DTbl Digital to Binary U16.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital to Binary U16.vi"/>
+				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
 			</Item>
 			<Item Name="4503B.vi" Type="VI" URL="../ref/4503B_20230918.llb/4503B.vi"/>
 			<Item Name="4503B_AsciiCheck.vi" Type="VI" URL="../ref/4503B_20230918.llb/4503B_AsciiCheck.vi"/>
@@ -382,11 +383,9 @@
 			<Item Name="SaveExcel2.vi" Type="VI" URL="../ref/SaveExcel2.vi"/>
 			<Item Name="ShowAlarmMsg.vi" Type="VI" URL="../ref/AlarmBit.llb/ShowAlarmMsg.vi"/>
 			<Item Name="SinWaveGen.vi" Type="VI" URL="../ref/SinWaveGen.vi"/>
-			<Item Name="TCP Multiple Connections Data.ctl" Type="VI" URL="../TCPIP Actor/TCP Multiple Connections Data.ctl"/>
 			<Item Name="TCPIP CMD.ctl" Type="VI" URL="../0_Comm/Control/TCPIP CMD.ctl"/>
 			<Item Name="@Parameter_MTEST.vi" Type="VI" URL="../0_Comm/PCAN/CAN Communication.llb/@Parameter_MTEST.vi"/>
 			<Item Name="TcpipCmdVerify.vi" Type="VI" URL="../0_Comm/TcpipCmdVerify.vi"/>
-			<Item Name="TCP Multiple Connections Data.ctl" Type="VI" URL="../0_Comm/Control/TCP Multiple Connections Data.ctl"/>
 			<Item Name="ReadSetting.vi" Type="VI" URL="../0_Comm/ReadSetting.vi"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -408,8 +407,9 @@
 			<Item Name="DAQNavi_LV.dll" Type="Document" URL="DAQNavi_LV.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="AdvLvDaq.dll" Type="Document" URL="../../../../../../../../../../Windows/System32/AdvLvDaq.dll"/>
 			<Item Name="RED Actor.lvlib" Type="Library" URL="../RecipeEditor Actor/RED Actor.lvlib"/>
+			<Item Name="AdvLvDaq.dll" Type="Document" URL="/C/Windows/System32/AdvLvDaq.dll"/>
+			<Item Name="TCP Multiple Connections Data.ctl" Type="VI" URL="../TCPIP Actor/TCP Multiple Connections Data.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="BBTest" Type="EXE">
@@ -467,7 +467,7 @@
 				<Property Name="Source[14].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[14].type" Type="Str">VI</Property>
 				<Property Name="Source[15].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[15].itemID" Type="Ref">/My Computer/Dependencies/RED Actor.lvlib</Property>
+				<Property Name="Source[15].itemID" Type="Ref"></Property>
 				<Property Name="Source[15].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[15].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[15].type" Type="Str">Library</Property>
