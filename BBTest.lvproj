@@ -78,6 +78,10 @@
 		<Item Name="GetDataColumn.vi" Type="VI" URL="../0_Comm/GetDataColumn.vi"/>
 		<Item Name="PW3390 Actor.lvlib" Type="Library" URL="../PW3390 Actor/PW3390 Actor.lvlib"/>
 		<Item Name="PlotTestData.vi" Type="VI" URL="../TestFlow/PlotTestData.vi"/>
+		<Item Name="RefreshThermSettingUI.vi" Type="VI" URL="../0_Comm/RefreshThermSettingUI.vi"/>
+		<Item Name="4118 Actor.lvlib" Type="Library" URL="../4118 Actor/4118 Actor.lvlib"/>
+		<Item Name="4118Func.ctl" Type="VI" URL="../4118 Actor/4118Func.ctl"/>
+		<Item Name="4118MsgFunc.ctl" Type="VI" URL="../4118 Actor/4118MsgFunc.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="DAQNavi Clear Task.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/task/DAQNavi Clear Task.vi"/>
@@ -408,12 +412,36 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="RED Actor.lvlib" Type="Library" URL="../RecipeEditor Actor/RED Actor.lvlib"/>
-			<Item Name="AdvLvDaq.dll" Type="Document" URL="../../../../../../../../../../Windows/System32/AdvLvDaq.dll"/>
 			<Item Name="TCP Multiple Connections Data.ctl" Type="VI" URL="../TCPIP Actor/TCP Multiple Connections Data.ctl"/>
 			<Item Name="Msg Display.vi" Type="VI" URL="../0_Comm/Msg Display.vi"/>
 			<Item Name="ADC-Series-Modbus.vi" Type="VI" URL="../ref/PS_ADC-Series-Modbus.llb/ADC-Series-Modbus.vi"/>
 			<Item Name="Serial OpenClose RW.vi" Type="VI" URL="../ref/PS_ADC-Series-Modbus.llb/Serial OpenClose RW.vi"/>
 			<Item Name="CRC-16.vi" Type="VI" URL="../ref/PS_ADC-Series-Modbus.llb/CRC-16.vi"/>
+			<Item Name="AdvLvDaq.dll" Type="Document" URL="../../../../../../../../../../Windows/System32/AdvLvDaq.dll"/>
+			<Item Name="MB Modbus Data Unit.ctl" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Modbus Data Unit.ctl"/>
+			<Item Name="MB Decode Data.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Decode Data.vi"/>
+			<Item Name="MB Serial String to Modbus Data Unit.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial String to Modbus Data Unit.vi"/>
+			<Item Name="MB LRC-8.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB LRC-8.vi"/>
+			<Item Name="MB CRC-16.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB CRC-16.vi"/>
+			<Item Name="MB Serial Receive.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Receive.vi"/>
+			<Item Name="MB Serial Modbus Data Unit to String.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Modbus Data Unit to String.vi"/>
+			<Item Name="MB Serial Transmit.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Transmit.vi"/>
+			<Item Name="MB Modbus Command.ctl" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Modbus Command.ctl"/>
+			<Item Name="MB Modbus Command to Data Unit.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Modbus Command to Data Unit.vi"/>
+			<Item Name="MB Serial Master Query.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query.vi"/>
+			<Item Name="MB Serial Master Query Read Holding Registers (poly).vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query Read Holding Registers (poly).vi"/>
+			<Item Name="MB Serial Init.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Init.vi"/>
+			<Item Name="MB Serial Master Query Write Multiple Registers (poly).vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query Write Multiple Registers (poly).vi"/>
+			<Item Name="MB Serial Master Query Write Single Register (poly).vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query Write Single Register (poly).vi"/>
+			<Item Name="MB Serial Master Query Write Single Coil (poly).vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query Write Single Coil (poly).vi"/>
+			<Item Name="MB Serial Master Query Write Multiple Coils (poly).vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query Write Multiple Coils (poly).vi"/>
+			<Item Name="MB Serial Master Query Read Input Registers (poly).vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query Read Input Registers (poly).vi"/>
+			<Item Name="MB Serial Master Query Read Exception Status (poly).vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query Read Exception Status (poly).vi"/>
+			<Item Name="MB Serial Master Query Read Discrete Inputs (poly).vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query Read Discrete Inputs (poly).vi"/>
+			<Item Name="MB Serial Master Query Read Coils (poly).vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query Read Coils (poly).vi"/>
+			<Item Name="MB Serial Master Query (poly).vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query (poly).vi"/>
+			<Item Name="COM Increase.vi" Type="VI" URL="../0_Comm/COM Increase.vi"/>
+			<Item Name="ADAM-4118 Modbus.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/ADAM-4118 Modbus.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="BBTest" Type="EXE">
