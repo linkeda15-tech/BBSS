@@ -408,8 +408,12 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="RED Actor.lvlib" Type="Library" URL="../RecipeEditor Actor/RED Actor.lvlib"/>
-			<Item Name="AdvLvDaq.dll" Type="Document" URL="/C/Windows/System32/AdvLvDaq.dll"/>
+			<Item Name="AdvLvDaq.dll" Type="Document" URL="../../../../../../../../../../Windows/System32/AdvLvDaq.dll"/>
 			<Item Name="TCP Multiple Connections Data.ctl" Type="VI" URL="../TCPIP Actor/TCP Multiple Connections Data.ctl"/>
+			<Item Name="Msg Display.vi" Type="VI" URL="../0_Comm/Msg Display.vi"/>
+			<Item Name="ADC-Series-Modbus.vi" Type="VI" URL="../ref/PS_ADC-Series-Modbus.llb/ADC-Series-Modbus.vi"/>
+			<Item Name="Serial OpenClose RW.vi" Type="VI" URL="../ref/PS_ADC-Series-Modbus.llb/Serial OpenClose RW.vi"/>
+			<Item Name="CRC-16.vi" Type="VI" URL="../ref/PS_ADC-Series-Modbus.llb/CRC-16.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="BBTest" Type="EXE">

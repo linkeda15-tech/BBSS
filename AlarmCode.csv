@@ -7,10 +7,13 @@ Code(Dec),Code(Hex),訊息,發生原因,異常排除方法,Message,Reason,Solution,Remark
 5,5,驅動端伺服馬達通訊錯誤,,,,,,MTEST
 6,6,負載端伺服馬達通訊錯誤,,,,,,MTEST
 7,7,扭力計通訊錯誤,,,,,,MTEST
-8,8,轉速高於保護上限,,,,,,MTEST
-9,9,扭力高於保護上限,,,,,,MTEST
-10,A,功率高於保護上限,,,,,,MTEST
-11,B,緊急停止,,,,,,MTEST
+8,8,電力分析儀通訊錯誤,,,,,,MTEST
+9,9,電源供應器通訊錯誤,,,,,,MTEST
+10,A,轉速高於保護上限,,,,,,MTEST
+11,B,扭力高於保護上限,,,,,,MTEST
+12,C,功率高於保護上限,,,,,,MTEST
+13,D,緊急停止,,,,,,MTEST
+,,,,,,,,
 13,D,CAN通訊錯誤,CAN通訊錯誤,檢查通訊，再由軟體重置,CAN Communcation Timeout,,,MTEST
 14,E,扭力值低於下限,扭力值偵測低於下限,檢查參數設定扭力下限的設定值是否過高，再由軟體重置,Torque value below the lowerlimit,,,MTEST DC1500 Only
 15,F,速度高於上限,轉速值偵測高於上限,檢查馬達的轉速值，再由軟體重置,Speed over the upperlimit,,,MTEST DC1500 Only
