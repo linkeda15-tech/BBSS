@@ -49,9 +49,10 @@
 			<Item Name="PlotTestDataStep.ctl" Type="VI" URL="../TestFlow/PlotTestDataStep.ctl"/>
 			<Item Name="PW3390MsgFunc.ctl" Type="VI" URL="../PW3390 Actor/ActorMessage/PW3390MsgFunc.ctl"/>
 			<Item Name="NestedActorName.ctl" Type="VI" URL="../MFActor/NestedActorName.ctl"/>
+			<Item Name="4118Func.ctl" Type="VI" URL="../4118 Actor/4118Func.ctl"/>
+			<Item Name="4118MsgFunc.ctl" Type="VI" URL="../4118 Actor/4118MsgFunc.ctl"/>
 		</Item>
 		<Item Name="4503 Actor.lvlib" Type="Library" URL="../4503 Actor/4503 Actor.lvlib"/>
-		<Item Name="aaaaa.vi" Type="VI" URL="../MFActor/MFActor/aaaaa.vi"/>
 		<Item Name="AIO Actor.lvlib" Type="Library" URL="../AIO Actor/AIO Actor.lvlib"/>
 		<Item Name="AlarmCode.csv" Type="Document" URL="../AlarmCode.csv"/>
 		<Item Name="ASDA-A2.vi" Type="VI" URL="../ref/ASDA-A2.vi"/>
@@ -72,7 +73,6 @@
 		<Item Name="TestMultiPtActor.lvlib" Type="Library" URL="../TestMultiPt Actor/TestMultiPtActor.lvlib"/>
 		<Item Name="TestPointEditorSts.vi" Type="VI" URL="../0_Comm/TestPointEditorSts.vi"/>
 		<Item Name="TestSinWaveActor.lvlib" Type="Library" URL="../TestSinWave Actor/TestSinWaveActor.lvlib"/>
-		<Item Name="Untitled 1.vi" Type="VI" URL="../Untitled 1.vi"/>
 		<Item Name="TCPIPCommunication.vi" Type="VI" URL="../0_Comm/TCPIPCommunication.vi"/>
 		<Item Name="ReportTemplate.xls" Type="Document" URL="../ReportTemplate.xls"/>
 		<Item Name="GetDataColumn.vi" Type="VI" URL="../0_Comm/GetDataColumn.vi"/>
@@ -80,8 +80,6 @@
 		<Item Name="PlotTestData.vi" Type="VI" URL="../TestFlow/PlotTestData.vi"/>
 		<Item Name="RefreshThermSettingUI.vi" Type="VI" URL="../0_Comm/RefreshThermSettingUI.vi"/>
 		<Item Name="4118 Actor.lvlib" Type="Library" URL="../4118 Actor/4118 Actor.lvlib"/>
-		<Item Name="4118Func.ctl" Type="VI" URL="../4118 Actor/4118Func.ctl"/>
-		<Item Name="4118MsgFunc.ctl" Type="VI" URL="../4118 Actor/4118MsgFunc.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="DAQNavi Clear Task.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/task/DAQNavi Clear Task.vi"/>
@@ -417,7 +415,6 @@
 			<Item Name="ADC-Series-Modbus.vi" Type="VI" URL="../ref/PS_ADC-Series-Modbus.llb/ADC-Series-Modbus.vi"/>
 			<Item Name="Serial OpenClose RW.vi" Type="VI" URL="../ref/PS_ADC-Series-Modbus.llb/Serial OpenClose RW.vi"/>
 			<Item Name="CRC-16.vi" Type="VI" URL="../ref/PS_ADC-Series-Modbus.llb/CRC-16.vi"/>
-			<Item Name="AdvLvDaq.dll" Type="Document" URL="../../../../../../../../../../Windows/System32/AdvLvDaq.dll"/>
 			<Item Name="MB Modbus Data Unit.ctl" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Modbus Data Unit.ctl"/>
 			<Item Name="MB Decode Data.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Decode Data.vi"/>
 			<Item Name="MB Serial String to Modbus Data Unit.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial String to Modbus Data Unit.vi"/>
@@ -442,6 +439,7 @@
 			<Item Name="MB Serial Master Query (poly).vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query (poly).vi"/>
 			<Item Name="COM Increase.vi" Type="VI" URL="../0_Comm/COM Increase.vi"/>
 			<Item Name="ADAM-4118 Modbus.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/ADAM-4118 Modbus.vi"/>
+			<Item Name="AdvLvDaq.dll" Type="Document" URL="/C/Windows/System32/AdvLvDaq.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="BBTest" Type="EXE">
@@ -539,7 +537,7 @@
 				<Property Name="Source[22].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[22].type" Type="Str">Library</Property>
 				<Property Name="Source[23].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[23].itemID" Type="Ref">/My Computer/Untitled 1.vi</Property>
+				<Property Name="Source[23].itemID" Type="Ref"></Property>
 				<Property Name="Source[23].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[23].type" Type="Str">VI</Property>
 				<Property Name="Source[24].destinationIndex" Type="Int">0</Property>
@@ -560,7 +558,7 @@
 				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[5].type" Type="Str">Container</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/aaaaa.vi</Property>
+				<Property Name="Source[6].itemID" Type="Ref"></Property>
 				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[6].type" Type="Str">VI</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
