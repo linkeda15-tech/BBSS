@@ -1,0 +1,70 @@
+VERSION "HINBNNNYYNNNYYNNNNNNNNNNNNYNNNYYYNNYNNNNNN/4//%%/4/'%**4NNN///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: DU
+VAL_TABLE_ num_p 4 "5 P" 3 "4 P" 2 "3 P" 1 "2 P" 0 "1 P" ;
+VAL_TABLE_ num_s 5 "20 S" 4 "17 S" 3 "16 S" 2 "13 S" 1 "12 S" 0 "10 S" ;
+VAL_TABLE_ c_type 4 "2270 A (5.55Ah)" 3 "2170 G (5.15Ah)" 2 "18650 GA (3.45Ah)" 1 "18650 PF (2.9Ah)" 0 "18650 AA (2.2 Ah)" ;
+VAL_TABLE_ c_state 4 "State C-Suspend" 1 "State C-Charge" 0 "State C-Neutral" ;
+VAL_TABLE_ c_status 1 "Charge" 0 "Non-charge" ;
+VAL_TABLE_ cap_l 3 "Lv0 rsoc = 0%" 2 "Lv1 rsoc = 3~1%" 1 "Lv2 rsoc = 8~4%" 0 "Other rsoc >= 9%" ;
+VAL_TABLE_ d_state 2 "State D-1" 1 "State F" 0 "State C-1" ;
+VAL_TABLE_ d_status 1 "Discharge" 0 "Non discharge" ;
+VAL_TABLE_ d_code 169 "A9_Discharge error State E" 0 "No error" ;
+VAL_TABLE_ Eval 1 "Error Occurs" ;
+VAL_TABLE_ On1Off0 1 "On" 0 "Off" ;
+VAL_TABLE_ ast 13 "Off" 12 "rvd" 11 "Eco 50%" 10 "Tou 75%" 9 "Tour+ 100%" 8 "Normal 125%" 7 "Normal+ 150%" 6 "Climb 175%" 5 "Climb+ 200%" 4 "Power 250%" 3 "Power+ 300%" 2 "Boost 350%" 1 "Boost+ 360%" 0 "rvd" ;
+VAL_TABLE_ Yes1No0 1 "Yes" 0 "No" ;
+VAL_TABLE_ func 1 "Smart charge" 0 "No smart charge" ;
+VAL_TABLE_ c_sta 1 "On charging" 0 "No charging" ;
+VAL_TABLE_ c_stb 1 "Yes" 0 "No" ;
+VAL_TABLE_ bmse 1 "With error" 0 "Without error" ;
+VAL_TABLE_ rmod 1 "Riding mode" ;
+
+
+BO_ 1732 N_DU_Cycling_data_3: 8 DU
+ SG_ ct_d : 40|8@1- (2,0) [0|0] "deg C" Vector__XXX
+ SG_ pt_d : 16|8@1- (1,0) [0|0] "deg C" Vector__XXX
+ SG_ ot : 0|16@1+ (1,0) [0|0] "hours" Vector__XXX
+
+BO_ 1730 N_DU_Cycling_data_1: 8 DU
+ SG_ mpc : 48|16@1+ (0.01,0) [0|0] "A" Vector__XXX
+ SG_ cde : 32|16@1+ (0.1,0) [0|0] " rpm" Vector__XXX
+ SG_ trq : 16|16@1- (0.1,0) [0|0] " Nm" Vector__XXX
+ SG_ spd : 0|16@1+ (0.1,0) [0|0] " km/hr" Vector__XXX
+
+
+
+
