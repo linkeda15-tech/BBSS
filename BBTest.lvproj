@@ -51,6 +51,7 @@
 			<Item Name="NestedActorName.ctl" Type="VI" URL="../MFActor/NestedActorName.ctl"/>
 			<Item Name="4118Func.ctl" Type="VI" URL="../4118 Actor/4118Func.ctl"/>
 			<Item Name="4118MsgFunc.ctl" Type="VI" URL="../4118 Actor/4118MsgFunc.ctl"/>
+			<Item Name="LoadDBCStep.ctl" Type="VI" URL="../TestFlow/LoadDBCStep.ctl"/>
 		</Item>
 		<Item Name="4503 Actor.lvlib" Type="Library" URL="../4503 Actor/4503 Actor.lvlib"/>
 		<Item Name="AIO Actor.lvlib" Type="Library" URL="../AIO Actor/AIO Actor.lvlib"/>
@@ -80,6 +81,8 @@
 		<Item Name="PlotTestData.vi" Type="VI" URL="../TestFlow/PlotTestData.vi"/>
 		<Item Name="RefreshThermSettingUI.vi" Type="VI" URL="../0_Comm/RefreshThermSettingUI.vi"/>
 		<Item Name="4118 Actor.lvlib" Type="Library" URL="../4118 Actor/4118 Actor.lvlib"/>
+		<Item Name="TestCallingPy.vi" Type="VI" URL="../0_Comm/TestCallingPy.vi"/>
+		<Item Name="LoadDBCFile.vi" Type="VI" URL="../TestFlow/LoadDBCFile.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="DAQNavi Clear Task.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/task/DAQNavi Clear Task.vi"/>
@@ -439,7 +442,7 @@
 			<Item Name="MB Serial Master Query (poly).vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query (poly).vi"/>
 			<Item Name="COM Increase.vi" Type="VI" URL="../0_Comm/COM Increase.vi"/>
 			<Item Name="ADAM-4118 Modbus.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/ADAM-4118 Modbus.vi"/>
-			<Item Name="AdvLvDaq.dll" Type="Document" URL="/C/Windows/System32/AdvLvDaq.dll"/>
+			<Item Name="AdvLvDaq.dll" Type="Document" URL="../../../../../../../../../../Windows/System32/AdvLvDaq.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="BBTest" Type="EXE">

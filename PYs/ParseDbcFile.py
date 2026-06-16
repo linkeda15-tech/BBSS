@@ -1,5 +1,7 @@
+import json
 import re
 import os
+
 
 def parse_dbc_file(file_path: str) -> list:
     """
@@ -40,20 +42,20 @@ def parse_dbc_file(file_path: str) -> list:
             # 2. Match SG_ line and extract attributes if inside a valid BO_ block
             sg_match = sg_pattern.match(line)
             if sg_match and current_message_id is not None:
-                signal_data = [
-                    current_message_id,                 # BO_ ID
-                    sg_match.group(1),                  # Signal Name
-                    int(sg_match.group(2)),             # Start Bit
-                    int(sg_match.group(3)),             # Length
-                    sg_match.group(4),                  # Byte Order (@1 or @0)
-                    sg_match.group(5),                  # Sign (+ or -)
-                    convert_numeric(sg_match.group(6)), # Factor
-                    convert_numeric(sg_match.group(7)), # Offset
-                    sg_match.group(8)                   # Unit
-                ]
+                signal_data = {
+                    "message_id": current_message_id,
+                    "signal_name": sg_match.group(1),
+                    "start_bit": int(sg_match.group(2)),
+                    "length": int(sg_match.group(3)),
+                    "byte_order": sg_match.group(4),
+                    "sign": sg_match.group(5),
+                    "factor": convert_numeric(sg_match.group(6)),
+                    "offset": convert_numeric(sg_match.group(7)),
+                    "unit": sg_match.group(8).strip()
+                }
                 result.append(signal_data)
 
-    return result
+    return json.dumps(result)
 
 # ==========================================
 # Example Usage:
