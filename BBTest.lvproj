@@ -442,7 +442,7 @@
 			<Item Name="MB Serial Master Query (poly).vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query (poly).vi"/>
 			<Item Name="COM Increase.vi" Type="VI" URL="../0_Comm/COM Increase.vi"/>
 			<Item Name="ADAM-4118 Modbus.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/ADAM-4118 Modbus.vi"/>
-			<Item Name="AdvLvDaq.dll" Type="Document" URL="../../../../../../../../../../Windows/System32/AdvLvDaq.dll"/>
+			<Item Name="AdvLvDaq.dll" Type="Document" URL="/C/Windows/System32/AdvLvDaq.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="BBTest" Type="EXE">
