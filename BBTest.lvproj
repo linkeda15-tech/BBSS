@@ -52,6 +52,8 @@
 			<Item Name="4118Func.ctl" Type="VI" URL="../4118 Actor/4118Func.ctl"/>
 			<Item Name="4118MsgFunc.ctl" Type="VI" URL="../4118 Actor/4118MsgFunc.ctl"/>
 			<Item Name="LoadDBCStep.ctl" Type="VI" URL="../TestFlow/LoadDBCStep.ctl"/>
+			<Item Name="DUTMotorActFunc.ctl" Type="VI" URL="../DUTMotor Actor/DUTMotorActFunc.ctl"/>
+			<Item Name="DUTMotorMsgFunc.ctl" Type="VI" URL="../DUTMotor Actor/ActorMessage/DUTMotorMsgFunc.ctl"/>
 		</Item>
 		<Item Name="4503 Actor.lvlib" Type="Library" URL="../4503 Actor/4503 Actor.lvlib"/>
 		<Item Name="AIO Actor.lvlib" Type="Library" URL="../AIO Actor/AIO Actor.lvlib"/>
@@ -83,6 +85,10 @@
 		<Item Name="4118 Actor.lvlib" Type="Library" URL="../4118 Actor/4118 Actor.lvlib"/>
 		<Item Name="TestCallingPy.vi" Type="VI" URL="../0_Comm/TestCallingPy.vi"/>
 		<Item Name="LoadDBCFile.vi" Type="VI" URL="../TestFlow/LoadDBCFile.vi"/>
+		<Item Name="DUTMotor Actor.lvlib" Type="Library" URL="../DUTMotor Actor/DUTMotor Actor.lvlib"/>
+		<Item Name="PCANUSB.lvclass" Type="LVClass" URL="../ref/PCANUSB/PCANUSB.lvclass"/>
+		<Item Name="GroupSignals.vi" Type="VI" URL="../0_Comm/GroupSignals.vi"/>
+		<Item Name="CalCanSigValue.vi" Type="VI" URL="../DUTMotor Actor/DUTMotor/CalCanSigValue.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="DAQNavi Clear Task.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/task/DAQNavi Clear Task.vi"/>
@@ -442,7 +448,67 @@
 			<Item Name="MB Serial Master Query (poly).vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query (poly).vi"/>
 			<Item Name="COM Increase.vi" Type="VI" URL="../0_Comm/COM Increase.vi"/>
 			<Item Name="ADAM-4118 Modbus.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/ADAM-4118 Modbus.vi"/>
-			<Item Name="AdvLvDaq.dll" Type="Document" URL="/C/Windows/System32/AdvLvDaq.dll"/>
+			<Item Name="AdvLvDaq.dll" Type="Document" URL="../../../../../../../../../../Windows/System32/AdvLvDaq.dll"/>
+			<Item Name="TPCANBaudrate.ctl" Type="VI" URL="../ref/PCAN/CAN Communication.llb/TPCANBaudrate.ctl"/>
+			<Item Name="Error language selector.ctl" Type="VI" URL="../ref/PCAN/CAN Communication.llb/Error language selector.ctl"/>
+			<Item Name="CAN Get Error Text.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/CAN Get Error Text.vi"/>
+			<Item Name="Error Converter (ErrCode or Status).vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/Error Converter (ErrCode or Status).vi"/>
+			<Item Name="TPCANHandle.ctl" Type="VI" URL="../ref/PCAN/API_for_PCAN_BASIC_FD/TPCANHandle.ctl"/>
+			<Item Name="Wrap_TPCANHandle.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/Wrap_TPCANHandle.vi"/>
+			<Item Name="Channel Availability.ctl" Type="VI" URL="../ref/PCAN/CAN Communication.llb/Channel Availability.ctl"/>
+			<Item Name="TPCANParameter.ctl" Type="VI" URL="../ref/PCAN/CAN Communication.llb/TPCANParameter.ctl"/>
+			<Item Name="PCAN Get CHANNEL CONDITION.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get CHANNEL CONDITION.vi"/>
+			<Item Name="Wrap_Baudrate.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/Wrap_Baudrate.vi"/>
+			<Item Name="HW_Type.ctl" Type="VI" URL="../ref/PCAN/CAN Communication.llb/HW_Type.ctl"/>
+			<Item Name="CAN Initialize.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/CAN Initialize.vi"/>
+			<Item Name="PCAN Get USB DEVICE NUMBER.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get USB DEVICE NUMBER.vi"/>
+			<Item Name="PCAN Bus Off Auto Reset.ctl" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Bus Off Auto Reset.ctl"/>
+			<Item Name="PCAN Get TRACE STATUS.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get TRACE STATUS.vi"/>
+			<Item Name="PCAN Get TRACE SIZE.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get TRACE SIZE.vi"/>
+			<Item Name="PCAN Get TRACE LOCATION.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get TRACE LOCATION.vi"/>
+			<Item Name="TRACE config.ctl" Type="VI" URL="../ref/PCAN/CAN Communication.llb/TRACE config.ctl"/>
+			<Item Name="PCAN Get TRACE CONFIGURE.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get TRACE CONFIGURE.vi"/>
+			<Item Name="PCAN Get SPEED QUERY.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get SPEED QUERY.vi"/>
+			<Item Name="PCAN Get SPEED QUERY FD.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get SPEED QUERY FD.vi"/>
+			<Item Name="PCAN Get RECEIVE STATUS.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get RECEIVE STATUS.vi"/>
+			<Item Name="PCAN Get RECEIVE EVENT HANDLER .vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get RECEIVE EVENT HANDLER .vi"/>
+			<Item Name="PCAN Get MESSAGE FILTER.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get MESSAGE FILTER.vi"/>
+			<Item Name="PCAN Get LOG STATUS.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get LOG STATUS.vi"/>
+			<Item Name="PCAN Get LOG LOCATION.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get LOG LOCATION.vi"/>
+			<Item Name="LOG config.ctl" Type="VI" URL="../ref/PCAN/CAN Communication.llb/LOG config.ctl"/>
+			<Item Name="PCAN Get LOG CONFIGURE.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get LOG CONFIGURE.vi"/>
+			<Item Name="PCAN Get LISTEN ONLY.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get LISTEN ONLY.vi"/>
+			<Item Name="PCAN Get LAN_SERVICE_STATUS.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get LAN_SERVICE_STATUS.vi"/>
+			<Item Name="PCAN Get IP_ADDRESS.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get IP_ADDRESS.vi"/>
+			<Item Name="PCAN Get IO_DIGITAL_VALUE.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get IO_DIGITAL_VALUE.vi"/>
+			<Item Name="PCAN Get IO_DIGITAL_CONFIGURATION.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get IO_DIGITAL_CONFIGURATION.vi"/>
+			<Item Name="PCAN Get IO_ANALOG_VALUE.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get IO_ANALOG_VALUE.vi"/>
+			<Item Name="PCAN Get INTERFRAME_DELAY  .vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get INTERFRAME_DELAY  .vi"/>
+			<Item Name="PCAN Get HARDWARE NAME.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get HARDWARE NAME.vi"/>
+			<Item Name="PCAN Get DIRECTORY PATH FOR TRACE FILES.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get DIRECTORY PATH FOR TRACE FILES.vi"/>
+			<Item Name="PCAN Get DEVICE CHANNEL VERSION.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get DEVICE CHANNEL VERSION.vi"/>
+			<Item Name="PCAN Get CONTROLLER NUMBER.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get CONTROLLER NUMBER.vi"/>
+			<Item Name="PCAN Get CHANNEL IDENTIFYING.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get CHANNEL IDENTIFYING.vi"/>
+			<Item Name="Channel Features.ctl" Type="VI" URL="../ref/PCAN/CAN Communication.llb/Channel Features.ctl"/>
+			<Item Name="PCAN Get CHANNEL FEATURE.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get CHANNEL FEATURE.vi"/>
+			<Item Name="PCAN Get CAN BITRATE ADAPTING.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get CAN BITRATE ADAPTING.vi"/>
+			<Item Name="PCAN Get BUSSPEED_DATA.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get BUSSPEED_DATA.vi"/>
+			<Item Name="PCAN Get BUSSPEED NOMINAL.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get BUSSPEED NOMINAL.vi"/>
+			<Item Name="PCAN Get BUSOFF AUTORESET.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get BUSOFF AUTORESET.vi"/>
+			<Item Name="PCAN Get BASIC API VERSION.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get BASIC API VERSION.vi"/>
+			<Item Name="PCAN Get ALLOW_STATUS_FRAMES.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get ALLOW_STATUS_FRAMES.vi"/>
+			<Item Name="PCAN Get ALLOW_RTR_FRAMES.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get ALLOW_RTR_FRAMES.vi"/>
+			<Item Name="PCAN Get ALLOW_ERROR_FRAMES.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get ALLOW_ERROR_FRAMES.vi"/>
+			<Item Name="PCAN Get ACCEPTANCE_FILTER_29BIT.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get ACCEPTANCE_FILTER_29BIT.vi"/>
+			<Item Name="PCAN Get ACCEPTANCE_FILTER_11BIT.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get ACCEPTANCE_FILTER_11BIT.vi"/>
+			<Item Name="PCAN Get 5VOLTS POWER.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/PCAN Get 5VOLTS POWER.vi"/>
+			<Item Name="CAN Get Value.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/CAN Get Value.vi"/>
+			<Item Name="CAN Uninitialize.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/CAN Uninitialize.vi"/>
+			<Item Name="CAN MSG Cluster.ctl" Type="VI" URL="../ref/PCAN/CAN Communication.llb/CAN MSG Cluster.ctl"/>
+			<Item Name="TPCANTimestampFD.ctl" Type="VI" URL="../ref/PCAN/CAN Communication.llb/TPCANTimestampFD.ctl"/>
+			<Item Name="CAN Read.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/CAN Read.vi"/>
+			<Item Name="CAN Write.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/CAN Write.vi"/>
+			<Item Name="PCANBasic.dll" Type="Document" URL="../ref/PCAN/PCANBasic.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="BBTest" Type="EXE">
