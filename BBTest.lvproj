@@ -58,7 +58,6 @@
 		<Item Name="4503 Actor.lvlib" Type="Library" URL="../4503 Actor/4503 Actor.lvlib"/>
 		<Item Name="AIO Actor.lvlib" Type="Library" URL="../AIO Actor/AIO Actor.lvlib"/>
 		<Item Name="AlarmCode.csv" Type="Document" URL="../AlarmCode.csv"/>
-		<Item Name="ASDA-A2.vi" Type="VI" URL="../ref/ASDA-A2.vi"/>
 		<Item Name="DIO Actor.lvlib" Type="Library" URL="../DIO Actor/DIO Actor.lvlib"/>
 		<Item Name="Global Variables.vi" Type="VI" URL="../Global Variables.vi"/>
 		<Item Name="JOIN.ico" Type="Document" URL="../JOIN.ico"/>
@@ -66,29 +65,16 @@
 		<Item Name="MainFormLauncher.vi" Type="VI" URL="../MainFormLauncher.vi"/>
 		<Item Name="MFActor.lvlib" Type="Library" URL="../MFActor/MFActor.lvlib"/>
 		<Item Name="PID Actor.lvlib" Type="Library" URL="../PID Actor/PID Actor.lvlib"/>
-		<Item Name="ReadRecipe.vi" Type="VI" URL="../0_Comm/ReadRecipe.vi"/>
-		<Item Name="RefreshAutoUI.vi" Type="VI" URL="../TestFlow/RefreshAutoUI.vi"/>
-		<Item Name="SelectFileType.vi" Type="VI" URL="../ref/SelectFileType.vi"/>
-		<Item Name="SyncPIDAdjValue.vi" Type="VI" URL="../0_Comm/SyncPIDAdjValue.vi"/>
 		<Item Name="TCPIPActor.lvlib" Type="Library" URL="../TCPIP Actor/TCPIPActor.lvlib"/>
 		<Item Name="TestAngleActor.lvlib" Type="Library" URL="../TestAngle Actor/TestAngleActor.lvlib"/>
 		<Item Name="TestFixPtActor.lvlib" Type="Library" URL="../TestFixPt Actor/TestFixPtActor.lvlib"/>
 		<Item Name="TestMultiPtActor.lvlib" Type="Library" URL="../TestMultiPt Actor/TestMultiPtActor.lvlib"/>
-		<Item Name="TestPointEditorSts.vi" Type="VI" URL="../0_Comm/TestPointEditorSts.vi"/>
 		<Item Name="TestSinWaveActor.lvlib" Type="Library" URL="../TestSinWave Actor/TestSinWaveActor.lvlib"/>
-		<Item Name="TCPIPCommunication.vi" Type="VI" URL="../0_Comm/TCPIPCommunication.vi"/>
 		<Item Name="ReportTemplate.xls" Type="Document" URL="../ReportTemplate.xls"/>
-		<Item Name="GetDataColumn.vi" Type="VI" URL="../0_Comm/GetDataColumn.vi"/>
 		<Item Name="PW3390 Actor.lvlib" Type="Library" URL="../PW3390 Actor/PW3390 Actor.lvlib"/>
-		<Item Name="PlotTestData.vi" Type="VI" URL="../TestFlow/PlotTestData.vi"/>
-		<Item Name="RefreshThermSettingUI.vi" Type="VI" URL="../0_Comm/RefreshThermSettingUI.vi"/>
 		<Item Name="4118 Actor.lvlib" Type="Library" URL="../4118 Actor/4118 Actor.lvlib"/>
-		<Item Name="TestCallingPy.vi" Type="VI" URL="../0_Comm/TestCallingPy.vi"/>
-		<Item Name="LoadDBCFile.vi" Type="VI" URL="../TestFlow/LoadDBCFile.vi"/>
 		<Item Name="DUTMotor Actor.lvlib" Type="Library" URL="../DUTMotor Actor/DUTMotor Actor.lvlib"/>
-		<Item Name="PCANUSB.lvclass" Type="LVClass" URL="../ref/PCANUSB/PCANUSB.lvclass"/>
-		<Item Name="GroupSignals.vi" Type="VI" URL="../0_Comm/GroupSignals.vi"/>
-		<Item Name="CalCanSigValue.vi" Type="VI" URL="../DUTMotor Actor/DUTMotor/CalCanSigValue.vi"/>
+		<Item Name="ParseDbcFile.py" Type="Document" URL="../PYs/ParseDbcFile.py"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="DAQNavi Clear Task.vi" Type="VI" URL="/&lt;userlib&gt;/DAQNavi Polymorphic VI/configure/task/DAQNavi Clear Task.vi"/>
@@ -394,9 +380,6 @@
 			<Item Name="SaveExcel2.vi" Type="VI" URL="../ref/SaveExcel2.vi"/>
 			<Item Name="ShowAlarmMsg.vi" Type="VI" URL="../ref/AlarmBit.llb/ShowAlarmMsg.vi"/>
 			<Item Name="SinWaveGen.vi" Type="VI" URL="../ref/SinWaveGen.vi"/>
-			<Item Name="TCPIP CMD.ctl" Type="VI" URL="../0_Comm/Control/TCPIP CMD.ctl"/>
-			<Item Name="@Parameter_MTEST.vi" Type="VI" URL="../0_Comm/PCAN/CAN Communication.llb/@Parameter_MTEST.vi"/>
-			<Item Name="TcpipCmdVerify.vi" Type="VI" URL="../0_Comm/TcpipCmdVerify.vi"/>
 			<Item Name="ReadSetting.vi" Type="VI" URL="../0_Comm/ReadSetting.vi"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -448,7 +431,6 @@
 			<Item Name="MB Serial Master Query (poly).vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/MB Serial Master Query (poly).vi"/>
 			<Item Name="COM Increase.vi" Type="VI" URL="../0_Comm/COM Increase.vi"/>
 			<Item Name="ADAM-4118 Modbus.vi" Type="VI" URL="../ref/ADAM-4118 Modbus.llb/ADAM-4118 Modbus.vi"/>
-			<Item Name="AdvLvDaq.dll" Type="Document" URL="../../../../../../../../../../Windows/System32/AdvLvDaq.dll"/>
 			<Item Name="TPCANBaudrate.ctl" Type="VI" URL="../ref/PCAN/CAN Communication.llb/TPCANBaudrate.ctl"/>
 			<Item Name="Error language selector.ctl" Type="VI" URL="../ref/PCAN/CAN Communication.llb/Error language selector.ctl"/>
 			<Item Name="CAN Get Error Text.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/CAN Get Error Text.vi"/>
@@ -509,6 +491,20 @@
 			<Item Name="CAN Read.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/CAN Read.vi"/>
 			<Item Name="CAN Write.vi" Type="VI" URL="../ref/PCAN/CAN Communication.llb/CAN Write.vi"/>
 			<Item Name="PCANBasic.dll" Type="Document" URL="../ref/PCAN/PCANBasic.dll"/>
+			<Item Name="AdvLvDaq.dll" Type="Document" URL="/C/Windows/System32/AdvLvDaq.dll"/>
+			<Item Name="GroupSignals.vi" Type="VI" URL="../0_Comm/GroupSignals.vi"/>
+			<Item Name="CalCanSigValue.vi" Type="VI" URL="../DUTMotor Actor/DUTMotor/CalCanSigValue.vi"/>
+			<Item Name="PCANUSB.lvclass" Type="LVClass" URL="../ref/PCANUSB/PCANUSB.lvclass"/>
+			<Item Name="LoadDBCFile.vi" Type="VI" URL="../TestFlow/LoadDBCFile.vi"/>
+			<Item Name="RefreshThermSettingUI.vi" Type="VI" URL="../0_Comm/RefreshThermSettingUI.vi"/>
+			<Item Name="PlotTestData.vi" Type="VI" URL="../TestFlow/PlotTestData.vi"/>
+			<Item Name="GetDataColumn.vi" Type="VI" URL="../0_Comm/GetDataColumn.vi"/>
+			<Item Name="TestPointEditorSts.vi" Type="VI" URL="../0_Comm/TestPointEditorSts.vi"/>
+			<Item Name="SyncPIDAdjValue.vi" Type="VI" URL="../0_Comm/SyncPIDAdjValue.vi"/>
+			<Item Name="SelectFileType.vi" Type="VI" URL="../ref/SelectFileType.vi"/>
+			<Item Name="RefreshAutoUI.vi" Type="VI" URL="../TestFlow/RefreshAutoUI.vi"/>
+			<Item Name="ReadRecipe.vi" Type="VI" URL="../0_Comm/ReadRecipe.vi"/>
+			<Item Name="ASDA-A2.vi" Type="VI" URL="../ref/ASDA-A2.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="BBTest" Type="EXE">
@@ -526,7 +522,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{1DE9EE1F-C3B5-4DD3-A0FF-351A0AD88834}</Property>
-				<Property Name="Bld_version.build" Type="Int">14</Property>
+				<Property Name="Bld_version.build" Type="Int">16</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">BBTest.exe</Property>
@@ -537,54 +533,57 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/BBTest</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/JOIN.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{76229010-EEE4-42EB-93FA-9BD02431E493}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5159BC62-6582-4EA0-BE5D-FD4FAEDCFE40}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/MainFormLauncher.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Global Variables.vi</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/MFActor.lvlib</Property>
+				<Property Name="Source[10].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[10].type" Type="Str">VI</Property>
+				<Property Name="Source[10].type" Type="Str">Library</Property>
 				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/My Computer/MainFormClosing.vi</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/PID Actor.lvlib</Property>
+				<Property Name="Source[11].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[11].type" Type="Str">VI</Property>
+				<Property Name="Source[11].type" Type="Str">Library</Property>
 				<Property Name="Source[12].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[12].itemID" Type="Ref">/My Computer/MFActor.lvlib</Property>
+				<Property Name="Source[12].itemID" Type="Ref">/My Computer/TestAngleActor.lvlib</Property>
 				<Property Name="Source[12].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[12].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[12].type" Type="Str">Library</Property>
 				<Property Name="Source[13].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[13].itemID" Type="Ref">/My Computer/PID Actor.lvlib</Property>
+				<Property Name="Source[13].itemID" Type="Ref">/My Computer/TestFixPtActor.lvlib</Property>
 				<Property Name="Source[13].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[13].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[13].type" Type="Str">Library</Property>
 				<Property Name="Source[14].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[14].itemID" Type="Ref">/My Computer/ReadRecipe.vi</Property>
+				<Property Name="Source[14].itemID" Type="Ref">/My Computer/TestMultiPtActor.lvlib</Property>
+				<Property Name="Source[14].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[14].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[14].type" Type="Str">VI</Property>
+				<Property Name="Source[14].type" Type="Str">Library</Property>
 				<Property Name="Source[15].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[15].itemID" Type="Ref"></Property>
+				<Property Name="Source[15].itemID" Type="Ref">/My Computer/TestSinWaveActor.lvlib</Property>
 				<Property Name="Source[15].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[15].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[15].type" Type="Str">Library</Property>
 				<Property Name="Source[16].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[16].itemID" Type="Ref">/My Computer/RefreshAutoUI.vi</Property>
+				<Property Name="Source[16].itemID" Type="Ref">/My Computer/ReportTemplate.xls</Property>
 				<Property Name="Source[16].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[16].type" Type="Str">VI</Property>
 				<Property Name="Source[17].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[17].itemID" Type="Ref">/My Computer/SyncPIDAdjValue.vi</Property>
+				<Property Name="Source[17].itemID" Type="Ref">/My Computer/TCPIPActor.lvlib</Property>
+				<Property Name="Source[17].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[17].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[17].type" Type="Str">VI</Property>
+				<Property Name="Source[17].type" Type="Str">Library</Property>
 				<Property Name="Source[18].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[18].itemID" Type="Ref">/My Computer/TestAngleActor.lvlib</Property>
+				<Property Name="Source[18].itemID" Type="Ref">/My Computer/PW3390 Actor.lvlib</Property>
 				<Property Name="Source[18].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[18].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[18].type" Type="Str">Library</Property>
 				<Property Name="Source[19].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[19].itemID" Type="Ref">/My Computer/TestFixPtActor.lvlib</Property>
+				<Property Name="Source[19].itemID" Type="Ref">/My Computer/4118 Actor.lvlib</Property>
 				<Property Name="Source[19].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[19].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[19].type" Type="Str">Library</Property>
@@ -592,26 +591,13 @@
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/AlarmCode.csv</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[20].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[20].itemID" Type="Ref">/My Computer/TestMultiPtActor.lvlib</Property>
+				<Property Name="Source[20].itemID" Type="Ref">/My Computer/DUTMotor Actor.lvlib</Property>
 				<Property Name="Source[20].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[20].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[20].type" Type="Str">Library</Property>
 				<Property Name="Source[21].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[21].itemID" Type="Ref">/My Computer/TestPointEditorSts.vi</Property>
+				<Property Name="Source[21].itemID" Type="Ref">/My Computer/ParseDbcFile.py</Property>
 				<Property Name="Source[21].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[21].type" Type="Str">VI</Property>
-				<Property Name="Source[22].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[22].itemID" Type="Ref">/My Computer/TestSinWaveActor.lvlib</Property>
-				<Property Name="Source[22].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[22].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[22].type" Type="Str">Library</Property>
-				<Property Name="Source[23].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[23].itemID" Type="Ref"></Property>
-				<Property Name="Source[23].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[23].type" Type="Str">VI</Property>
-				<Property Name="Source[24].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[24].itemID" Type="Ref">/My Computer/ReportTemplate.xls</Property>
-				<Property Name="Source[24].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/JOIN.ico</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
@@ -627,24 +613,24 @@
 				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[5].type" Type="Str">Container</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref"></Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/AIO Actor.lvlib</Property>
+				<Property Name="Source[6].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[6].type" Type="Str">VI</Property>
+				<Property Name="Source[6].type" Type="Str">Library</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/AIO Actor.lvlib</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/DIO Actor.lvlib</Property>
 				<Property Name="Source[7].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[7].type" Type="Str">Library</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/My Computer/ASDA-A2.vi</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Global Variables.vi</Property>
 				<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[8].type" Type="Str">VI</Property>
 				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[9].itemID" Type="Ref">/My Computer/DIO Actor.lvlib</Property>
-				<Property Name="Source[9].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/MainFormClosing.vi</Property>
 				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[9].type" Type="Str">Library</Property>
-				<Property Name="SourceCount" Type="Int">25</Property>
+				<Property Name="Source[9].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">22</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">BBTest</Property>
 				<Property Name="TgtF_internalName" Type="Str">BBTest</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright ?2025 </Property>
@@ -652,20 +638,21 @@
 				<Property Name="TgtF_targetfileGUID" Type="Str">{489BD891-A53D-4FF6-851F-CD81C81D57A0}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">BBTest.exe</Property>
 			</Item>
-			<Item Name="BBTest Installer V1.0.1.14 (Update Version)" Type="Installer">
+			<Item Name="BBTest Installer V1.0.1.16 (Update Version)" Type="Installer">
 				<Property Name="Destination[0].name" Type="Str">c:\BBTest</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/BBTest</Property>
 				<Property Name="Destination[0].tag" Type="Str">{58B0694A-4DF1-4C59-879B-1E5A52DD0962}</Property>
 				<Property Name="Destination[0].type" Type="Str">absFolder</Property>
 				<Property Name="DestinationCount" Type="Int">1</Property>
-				<Property Name="INST_buildLocation" Type="Path">../builds/BBTest/BBTest Installer V1.0.1.14 (Update Version)</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/BBTest/BBTest Installer V1.0.1.16 (Update Version)</Property>
 				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
-				<Property Name="INST_buildSpecName" Type="Str">BBTest Installer V1.0.1.14 (Update Version)</Property>
+				<Property Name="INST_buildSpecName" Type="Str">BBTest Installer V1.0.1.16 (Update Version)</Property>
 				<Property Name="INST_defaultDir" Type="Str">{58B0694A-4DF1-4C59-879B-1E5A52DD0962}</Property>
+				<Property Name="INST_installerName" Type="Str">setup.exe</Property>
 				<Property Name="INST_productName" Type="Str">BBTest</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.14</Property>
+				<Property Name="INST_productVersion" Type="Str">0.1.16</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">24108000</Property>
+				<Property Name="InstSpecVersion" Type="Str">24118001</Property>
 				<Property Name="MSI_distID" Type="Str">{FD39717B-DD86-40A5-97EC-57CD1D1F7263}</Property>
 				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
 				<Property Name="MSI_osCheck" Type="Int">0</Property>
