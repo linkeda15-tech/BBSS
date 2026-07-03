@@ -20,6 +20,7 @@ def parse_dbc_file(file_path: str) -> list:
     )
 
     result = []
+    seen_signal_names = set()  # Set to track unique new version signal names
     current_message_id = None
 
     # Helper function to convert factor/offset to int or float dynamically
@@ -42,9 +43,16 @@ def parse_dbc_file(file_path: str) -> list:
             # 2. Match SG_ line and extract attributes if inside a valid BO_ block
             sg_match = sg_pattern.match(line)
             if sg_match and current_message_id is not None:
+                msg_id_hex = f"0x{current_message_id:X}"
+                # Generate the new version of the signal name
+                new_signal_name = f"{sg_match.group(1)}({msg_id_hex})"
+                # If this signal name was already added, skip it
+                if new_signal_name in seen_signal_names:
+                    continue
+                seen_signal_names.add(new_signal_name)
                 signal_data = {
                     "message_id": current_message_id,
-                    "signal_name": sg_match.group(1),
+                    "signal_name": new_signal_name,
                     "start_bit": int(sg_match.group(2)),
                     "length": int(sg_match.group(3)),
                     "byte_order": sg_match.group(4),
@@ -64,8 +72,8 @@ if __name__ == "__main__":
     import pprint
     
     # Define the file path to your DBC file
-    dbc_file_path = "gsystem.dbc"
-    
+    # dbc_file_path = "gsystem.dbc"
+    dbc_file_path = "gsystem_20260116(gobao).dbc"
     
     # Dummy setup: Creating the file local to test the script
     # (In real use, make sure 'gsystem.dbc' exists in your directory)

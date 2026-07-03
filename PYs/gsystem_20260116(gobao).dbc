@@ -1,0 +1,719 @@
+VERSION "HINBNNNYYNNNYYNNNNNNNNNNNNYNNNYYYNNYNNNNNN/4//%%/4/'%**4NNN///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: NodeF SG BAT DU
+VAL_TABLE_ num_p 4 "5 P" 3 "4 P" 2 "3 P" 1 "2 P" 0 "1 P" ;
+VAL_TABLE_ num_s 5 "20 S" 4 "17 S" 3 "16 S" 2 "13 S" 1 "12 S" 0 "10 S" ;
+VAL_TABLE_ c_type 4 "2270 A (5.55Ah)" 3 "2170 G (5.15Ah)" 2 "18650 GA (3.45Ah)" 1 "18650 PF (2.9Ah)" 0 "18650 AA (2.2 Ah)" ;
+VAL_TABLE_ c_state 4 "State C-Suspend" 1 "State C-Charge" 0 "State C-Neutral" ;
+VAL_TABLE_ c_status 1 "Charge" 0 "Non-charge" ;
+VAL_TABLE_ cap_l 3 "Lv0 rsoc = 0%" 2 "Lv1 rsoc = 3~1%" 1 "Lv2 rsoc = 8~4%" 0 "Other rsoc >= 9%" ;
+VAL_TABLE_ d_state 2 "State D-1" 1 "State F" 0 "State C-1" ;
+VAL_TABLE_ d_status 1 "Discharge" 0 "Non discharge" ;
+VAL_TABLE_ d_code 169 "A9_Discharge error State E" 0 "No error" ;
+VAL_TABLE_ Eval 1 "Error Occurs" ;
+VAL_TABLE_ On1Off0 1 "On" 0 "Off" ;
+VAL_TABLE_ ast 13 "Off" 12 "rvd" 11 "Eco 50%" 10 "Tou 75%" 9 "Tour+ 100%" 8 "Normal 125%" 7 "Normal+ 150%" 6 "Climb 175%" 5 "Climb+ 200%" 4 "Power 250%" 3 "Power+ 300%" 2 "Boost 350%" 1 "Boost+ 360%" 0 "rvd" ;
+VAL_TABLE_ Yes1No0 1 "Yes" 0 "No" ;
+VAL_TABLE_ func 1 "Smart charge" 0 "No smart charge" ;
+VAL_TABLE_ c_sta 1 "On charging" 0 "No charging" ;
+VAL_TABLE_ c_stb 1 "Yes" 0 "No" ;
+VAL_TABLE_ bmse 1 "With error" 0 "Without error" ;
+VAL_TABLE_ rmod 1 "Riding mode" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ cfm : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sn : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ day : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ month : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ year : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ New_Signal_408 : 0|8@1- (0.1,0) [0|0] "km" Vector__XXX
+ SG_ dp_s : 0|2@1- (1,0) [0|0] "" Vector__XXX
+ SG_ acur : 0|16@1+ (0.01,0) [0|0] " A" Vector__XXX
+ SG_ acur : 0|16@1+ (0.01,0) [0|0] " A" Vector__XXX
+ SG_ nzcs : 0|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cra : 0|16@0- (0.1,0) [0|0] " degrees" Vector__XXX
+ SG_ tb4_Cell_temperature_4 : 0|8@1- (1,128) [0|0] " deg" Vector__XXX
+ SG_ tb3_Cell_temperature_3 : 0|8@1- (1,128) [0|0] " deg" Vector__XXX
+ SG_ Language : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Language : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ gear : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ theta_pitch_up_threshold : 0|16@1- (0.01,0) [0|0] "degrees" Vector__XXX
+ SG_ theta_roll_threshold : 0|8@1- (1,0) [0|0] "degrees" Vector__XXX
+ SG_ theta_roll_f : 0|8@1- (1,0) [0|0] "degrees" Vector__XXX
+ SG_ theta_pitch_flat_threshold : 0|16@1- (0.01,0) [0|0] "degrees" Vector__XXX
+ SG_ theta_pitch_threshold : 0|16@1- (0.01,0) [0|0] "" Vector__XXX
+ SG_ pitch_dot_limit : 0|16@1- (0.01,0) [0|0] "«×/s" Vector__XXX
+ SG_ theta_pitch_dot : 0|16@1- (0.01,0) [0|0] "«×/s" Vector__XXX
+ SG_ torque_threshold : 0|16@1+ (0.1,0) [0|0] "Nm" Vector__XXX
+ SG_ torque_f : 0|16@1+ (0.1,0) [0|0] "Nm" Vector__XXX
+ SG_ delta_t : 0|8@1+ (0.01,0) [0|0] "s" Vector__XXX
+ SG_ delta_assist : 0|8@1+ (10,0) [0|0] "%" Vector__XXX
+ SG_ w_v : 0|16@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ w_g : 0|16@1+ (0.001,0) [0|0] "" Vector__XXX
+ SG_ v_threshold : 0|16@1+ (0.1,0) [0|0] "km/hr" Vector__XXX
+ SG_ v_min : 0|8@1+ (0.1,0) [0|0] "km/hr" Vector__XXX
+ SG_ v_f : 0|16@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ v_dot_threahold : 0|8@1+ (0.1,0) [0|0] "m/s2" Vector__XXX
+ SG_ v_dot : 0|16@1- (0.1,0) [0|0] "" Vector__XXX
+ SG_ slip_roll_threshold : 0|8@1+ (0.001,0) [0|0] "" Vector__XXX
+ SG_ slip_roll : 0|8@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ slip_idx : 0|8@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ roll_diff : 0|8@1+ (0.1,0) [0|0] "degrees" Vector__XXX
+ SG_ pitch_diff : 0|8@1+ (0.1,0) [0|0] "degrees" Vector__XXX
+ SG_ nzcs_adjusted : 0|2@1+ (10,0) [0|0] "degrees" Vector__XXX
+ SG_ k_v : 0|16@1+ (0.001,0) [0|0] "" Vector__XXX
+ SG_ k_r : 0|16@1+ (0.001,0) [0|0] "" Vector__XXX
+ SG_ k_p : 0|16@1+ (0.001,0) [0|0] "s/km" Vector__XXX
+ SG_ k_g : 0|16@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ k_d : 0|16@1+ (0.001,0) [0|0] "" Vector__XXX
+ SG_ gauss_adjusted : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ gaus_adjusted : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cadence_threshold : 0|16@1+ (0.1,0) [0|0] "rpm" Vector__XXX
+ SG_ cadence_f : 0|16@1+ (0.1,0) [0|0] "rpm" Vector__XXX
+ SG_ atss_adjusted : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ intervene : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ralpf4 : 0|8@1- (1,0) [0|0] "1" Vector__XXX
+ SG_ ralpf3 : 0|8@1- (1,0) [0|0] "1" Vector__XXX
+ SG_ ralpf2 : 0|8@1- (1,0) [0|0] "1" Vector__XXX
+ SG_ ralpf1 : 0|8@1- (1,0) [0|0] "1" Vector__XXX
+ SG_ ralpf4 : 0|8@1- (1,0) [0|0] "1" Vector__XXX
+ SG_ ralpf3 : 0|8@1- (1,0) [0|0] "1" Vector__XXX
+ SG_ ralpf2 : 0|8@1- (1,0) [0|0] "1" Vector__XXX
+ SG_ ralpf1 : 0|8@1- (1,0) [0|0] "1" Vector__XXX
+ SG_ ralpf4 : 0|8@1- (1,0) [0|0] "1" Vector__XXX
+ SG_ ralpf3 : 0|8@1- (1,0) [0|0] "1" Vector__XXX
+ SG_ ralpf2 : 0|8@1- (1,0) [0|0] "1" Vector__XXX
+ SG_ ralpf1 : 0|8@1- (1,0) [0|0] "1" Vector__XXX
+ SG_ num_s : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ num_p : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ c_type : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ dnc_days_no_charging : 0|16@1+ (1,0) [0|0] "days" Vector__XXX
+ SG_ cncc_no_charging_cycle_time : 0|16@1+ (1,0) [0|0] "times" Vector__XXX
+ SG_ dncmax_max_day_no_charging : 0|16@1+ (1,0) [0|0] "days" Vector__XXX
+ SG_ noe_c8 : 0|8@1+ (1,0) [0|0] " times" Vector__XXX
+ SG_ noe_c7 : 0|8@1+ (1,0) [0|0] " times" Vector__XXX
+ SG_ noe_c6 : 0|8@1+ (1,0) [0|0] " times" Vector__XXX
+ SG_ noe_c5 : 0|8@1+ (1,0) [0|0] " times" Vector__XXX
+ SG_ noe_c4 : 0|8@1+ (1,0) [0|0] " times" Vector__XXX
+ SG_ noe_c3 : 0|8@1+ (1,0) [0|0] " times" Vector__XXX
+ SG_ noe_c2 : 0|8@1+ (1,0) [0|0] " times" Vector__XXX
+ SG_ noe_c1 : 0|8@1+ (1,0) [0|0] " times" Vector__XXX
+ SG_ noe_f9 : 0|8@1+ (1,0) [0|0] " times" Vector__XXX
+ SG_ noe_f1 : 0|8@1+ (1,0) [0|0] " times" Vector__XXX
+ SG_ noe_cb : 0|8@1+ (1,0) [0|0] " times" Vector__XXX
+ SG_ noe_ca : 0|8@1+ (1,0) [0|0] " times" Vector__XXX
+ SG_ tbmin : 0|8@1- (1,128) [0|0] " deg" Vector__XXX
+ SG_ tbmax : 0|8@1- (1,128) [0|0] " deg" Vector__XXX
+ SG_ vchmin_min_cell_voltage_past : 0|16@1+ (1,0) [0|0] " mV" Vector__XXX
+ SG_ vchmax_max_cell_voltage_past : 0|16@1+ (1,0) [0|0] " mV" Vector__XXX
+ SG_ ibmin : 0|16@1- (0.2,0) [-6553.6|6553.4] " mA" Vector__XXX
+ SG_ ibmax : 0|16@1- (0.2,0) [-6553.6|6553.4] " mA" Vector__XXX
+ SG_ soh_state_of_health : 0|8@1+ (1,0) [0|0] " %" Vector__XXX
+ SG_ hrd_high_rate_discharge_rate : 0|8@1+ (1,0) [0|0] " %" Vector__XXX
+ SG_ cchg_count_of_charge : 0|16@1+ (1,0) [0|0] " times" Vector__XXX
+ SG_ ccy_count_of_cycle : 0|16@1+ (1,0) [0|0] " cycles" Vector__XXX
+ SG_ cfc_count_of_full_charge : 0|16@1+ (1,0) [0|65535] " times" Vector__XXX
+ SG_ palpf4 : 0|16@1- (0.01,0) [0|0] "0.01" Vector__XXX
+ SG_ palpf3 : 0|16@1- (0.01,0) [0|0] "0.01" Vector__XXX
+ SG_ palpf2 : 0|16@1- (0.01,0) [0|0] "0.01" Vector__XXX
+ SG_ palpf1 : 0|16@1- (0.01,0) [0|0] "0.01" Vector__XXX
+ SG_ cbt_d : 0|8@0- (1,0) [0|0] " deg C" Vector__XXX
+ SG_ tut : 0|16@1+ (1,0) [0|0] " hour" Vector__XXX
+ SG_ acur : 0|16@1+ (0.01,0) [0|0] " A" Vector__XXX
+ SG_ ecode : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ palpf4 : 0|16@1- (0.01,0) [0|0] "0.01" Vector__XXX
+ SG_ palpf3 : 0|16@1- (0.01,0) [0|0] "0.01" Vector__XXX
+ SG_ palpf2 : 0|16@1- (0.01,0) [0|0] "0.01" Vector__XXX
+ SG_ palpf1 : 0|16@1- (0.01,0) [0|0] "0.01" Vector__XXX
+ SG_ cbt_d : 0|8@0- (1,0) [0|0] " deg C" Vector__XXX
+ SG_ tut : 0|16@1+ (1,0) [0|0] " hour" Vector__XXX
+ SG_ mode : 0|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bar : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ast_display : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_show : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ rsoc_display : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ remote_1_cmd_ack : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ remote_2_cmd_ack : 0|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ast_led : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ page : 0|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ sep_csta : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ep_csta : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sep_sx : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sep_sta : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sep_pd : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ep_sx : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ep_sta : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ep_pd : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ rerg : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ idata_tm : 0|4@1- (1,0) [0|0] "" Vector__XXX
+ SG_ idata : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ atss : 0|2@1- (1,0) [0|0] "" Vector__XXX
+ SG_ aspbs : 0|2@1- (1,0) [0|0] "" Vector__XXX
+ SG_ gauss : 0|4@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ars : 0|8@1- (10,0) [0|2550] "%" Vector__XXX
+ SG_ gaus : 0|4@1- (1,0) [0|15] "" Vector__XXX
+ SG_ imod : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ast : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Light : 0|2@1- (1,0) [0|0] "" Vector__XXX
+ SG_ batt : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ nzcs : 0|3@1+ (10,0) [0|0] "degress" Vector__XXX
+ SG_ req_b : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ rst_6a : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ st_gr : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ clb_gr : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sw_6a : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ vthro : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ mod_inc : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ mod_dec : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ mod_cfm : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ rst_aac : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ st_mm : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ clb_pa : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ clb_mca : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ clb_ca : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ hbrake : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ rst_ot : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ rst_l : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ rst_f : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sw_batt : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sw_lig : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sw_info : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ast_up : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ast_down : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ lce : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ nce : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ecode : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ eval : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ecode : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ c_status : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ c_state : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cap_l : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ d_ecode : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ d_state : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ d_status : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ func : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ c_stb_Charge_standby : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ c_sta_Charge_status : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ccv_charging_current_value : 0|16@1+ (0.001,0) [0|0] " A" Vector__XXX
+ SG_ cvv_charging_voltage_value : 0|16@1+ (0.001,0) [0|0] " V" Vector__XXX
+ SG_ bmse_BMS_error : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ det_2 : 0|16@1+ (1,0) [0|65535] "mV" Vector__XXX
+ SG_ det_1 : 0|16@1+ (1,0) [0|65535] "mV" Vector__XXX
+ SG_ ib_charge_discarge_current : 0|16@1- (0.002,0) [-65.536|65.534] " A" Vector__XXX
+ SG_ vb_tottal_battery_voltage : 0|16@1+ (0.001,0) [0|0] " V" Vector__XXX
+ SG_ dc_design_capacity : 0|16@1+ (1,0) [0|0] " mAh" Vector__XXX
+ SG_ fcc_full_charger_capacity : 0|16@1+ (1,0) [0|0] " mAh" Vector__XXX
+ SG_ rc_remain_capacity : 0|16@1+ (1,0) [0|0] " mAh" Vector__XXX
+ SG_ rsoc : 0|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ eval : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ecode : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ c_status : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ c_state : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cap_l : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ d_ecode : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ d_state : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ d_status : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ func : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ c_stb_Charge_standby : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ c_sta_Charge_status : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ccv_charging_current_value : 0|16@1+ (0.001,0) [0|0] " A" Vector__XXX
+ SG_ cvv_charging_voltage_value : 0|16@1+ (0.001,0) [0|0] " V" Vector__XXX
+ SG_ bmse_BMS_error : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ det_2 : 0|16@1+ (1,0) [0|65535] "mV" Vector__XXX
+ SG_ det_1 : 0|16@1+ (1,0) [0|65535] "mV" Vector__XXX
+ SG_ ib_charge_discarge_current : 0|16@1- (0.002,0) [-65.536|65.534] " A" Vector__XXX
+ SG_ vb_tottal_battery_voltage : 0|16@1+ (0.001,0) [0|0] " V" Vector__XXX
+ SG_ dc_design_capacity : 0|16@1+ (1,0) [0|0] " mAh" Vector__XXX
+ SG_ fcc_full_charger_capacity : 0|16@1+ (1,0) [0|0] " mAh" Vector__XXX
+ SG_ rc_remain_capacity : 0|16@1+ (1,0) [0|0] " mAh" Vector__XXX
+ SG_ rsoc : 0|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ c_status : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ c_state : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cap_l : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ d_ecode : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ d_state : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ d_status : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ func : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ c_stb_Charge_standby : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ c_sta_Charge_status : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ccv_charging_current_value : 0|16@1+ (0.001,0) [0|0] " A" Vector__XXX
+ SG_ cvv_charging_voltage_value : 0|16@1+ (0.001,0) [0|0] " V" Vector__XXX
+ SG_ bmse_BMS_error : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ det_2 : 0|16@1+ (1,0) [0|65535] "mV" Vector__XXX
+ SG_ det_1 : 0|16@1+ (1,0) [0|65535] "mV" Vector__XXX
+ SG_ ib_charge_discarge_current : 0|16@1- (0.002,0) [-65.536|65.534] " A" Vector__XXX
+ SG_ vb_tottal_battery_voltage : 0|16@1+ (0.001,0) [0|0] " V" Vector__XXX
+ SG_ dc_design_capacity : 0|16@1+ (1,0) [0|0] " mAh" Vector__XXX
+ SG_ fcc_full_charger_capacity : 0|16@1+ (1,0) [0|0] " mAh" Vector__XXX
+ SG_ rc_remain_capacity : 0|16@1+ (1,0) [0|0] " mAh" Vector__XXX
+ SG_ rsoc : 0|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ eval : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ecode : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ test_palpf : 0|16@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ test_trq : 0|16@1- (0.1,0) [0|0] "" Vector__XXX
+ SG_ slop_mid_trq : 0|16@1- (0.1,0) [0|0] "" Vector__XXX
+ SG_ min_trq : 0|16@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ w_gidr : 0|5@1- (1,0) [0|0] "" Vector__XXX
+ SG_ w_gidf : 0|3@1- (1,0) [0|0] "" Vector__XXX
+ SG_ test_trq : 0|16@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ middle_trq : 0|16@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ min_trq : 0|16@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ max_trq : 0|16@1+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ gear : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ eval : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ecode : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mode : 0|4@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ bar : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ast_display : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_show : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ rsoc_display : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ remote_1_cmd_ack : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ remote_2_cmd_ack : 0|7@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ ast_led : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ page : 0|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ c_state : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ c_status : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ cap_l : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ d_state : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ d_status : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ d_ecode : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ eval : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ecode : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ palpf4 : 0|16@1- (0.01,0) [0|0] "0.01" Vector__XXX
+ SG_ palpf3 : 0|16@1- (0.01,0) [0|0] "0.01" Vector__XXX
+ SG_ palpf2 : 0|16@1- (0.01,0) [0|0] "0.01" Vector__XXX
+ SG_ palpf1 : 0|16@1- (0.01,0) [0|0] "0.01" Vector__XXX
+ SG_ cra : 0|16@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ cbt_d : 0|8@0- (1,0) [0|0] " deg C" Vector__XXX
+ SG_ tut : 0|16@1+ (1,0) [0|0] " hour" Vector__XXX
+ SG_ eval : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cht : 0|8@1+ (1,0) [0|0] "deg" Vector__XXX
+ SG_ vov_Voltage_output_value : 0|16@1+ (0.001,0) [0|0] " V" Vector__XXX
+ SG_ cov_current_output_value : 0|16@1+ (0.001,0) [0|0] " A" Vector__XXX
+ SG_ f_cm_Full_charge_mode : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ nor_ch_Normal_charge : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ pre_ch_Pre_charge : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ no_ch_No_charge : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ht_ch_High_temp_charge : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VD : 0|16@1+ (1,0) [0|0] " mV" Vector__XXX
+ SG_ tb2_Cell_temperature_2 : 0|8@1- (1,128) [0|0] " deg" Vector__XXX
+ SG_ tb1_Cell_temperature_1 : 0|8@1- (1,128) [0|0] " deg" Vector__XXX
+ SG_ vcmin_minimum_cell_voltage : 0|16@1+ (0.001,0) [0|0] " V" Vector__XXX
+ SG_ vcmax_Maximum_cell_voltage : 0|16@1+ (0.001,0) [0|65.535] " V" Vector__XXX
+ SG_ sn : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ver : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ major : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ minor : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ func : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ c_sta_Charge_status : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ c_stb_Charge_standby : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ bmse_BMS_error : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ cvv_charging_voltage_value : 0|16@1+ (0.001,0) [0|0] " V" Vector__XXX
+ SG_ ccv_charging_current_value : 0|16@1+ (0.001,0) [0|0] " A" Vector__XXX
+ SG_ det_2 : 0|16@1+ (1,0) [0|65535] "mV" Vector__XXX
+ SG_ det_1 : 0|16@1+ (1,0) [0|65535] "mV" Vector__XXX
+ SG_ vb_tottal_battery_voltage : 0|16@1+ (0.001,0) [0|0] " V" Vector__XXX
+ SG_ ib_charge_discarge_current : 0|16@1- (0.002,0) [-65.536|65.534] " A" Vector__XXX
+ SG_ idata : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ rerg : 0|16@1- (1,0) [0|0] "" Vector__XXX
+ SG_ idata_tm : 0|4@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sep_csta : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ep_csta : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sep_sx : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sep_dsta : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sep_pd : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ep_sx : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ep_dsta : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ep_pd : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ atss : 0|2@1- (1,0) [0|0] "" Vector__XXX
+ SG_ aspbs : 0|2@1- (1,0) [0|0] "" Vector__XXX
+ SG_ gauss : 0|4@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ars : 0|8@1- (10,0) [0|2550] "%" Vector__XXX
+ SG_ gaus : 0|4@1- (1,0) [0|15] "" Vector__XXX
+ SG_ imod : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ast : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Light : 0|2@1- (1,0) [0|0] "" Vector__XXX
+ SG_ batt : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ecode : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ nzcs : 0|3@1+ (10,0) [0|0] "degress" Vector__XXX
+ SG_ req_b : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ rst_6a : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ st_gr : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ clb_gr : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sw_6a : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ vthro : 0|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ mod_inc : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ mod_dec : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ mod_cfm : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ rst_aac : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ st_mm : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ clb_pa : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ clb_mca : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ clb_ca : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ hbrake : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ rst_ot : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ rst_l : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ rst_f : 0|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sw_batt : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sw_lig : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sw_info : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ lce : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ nce : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ dc_design_capacity : 0|16@1+ (1,0) [0|0] " mAh" Vector__XXX
+ SG_ fcc_full_charger_capacity : 0|16@1+ (1,0) [0|0] " mAh" Vector__XXX
+
+BO_ 1533 R_NodeF_Serial_number_2: 8 NodeF
+ SG_ sn16 : 56|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sn15 : 48|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sn14 : 40|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sn13 : 32|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sn12 : 24|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sn11 : 16|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sn10 : 8|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sn9 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1532 R_NodeF_Serial_number_1: 8 NodeF
+ SG_ sn8 : 56|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sn7 : 48|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sn6 : 40|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sn5 : 32|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sn4 : 24|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sn3 : 16|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sn2 : 8|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ sn1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1012 E_NodeF_Customized_version: 8 NodeF
+ SG_ cv8_g : 56|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ cv7_g : 48|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ cv6_g : 40|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ cv5_g : 32|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ cv4_g : 24|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ cv3_g : 16|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ cv2_g : 8|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ cv1_g : 0|8@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1247 R_DU_Confirmation: 8 DU
+ SG_ tca : 24|8@1- (1,0) [0|0] "mm" Vector__XXX
+ SG_ ccfr : 8|16@1+ (1,0) [0|0] "mm" Vector__XXX
+ SG_ cfm : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1234 R_DU_Customized_version: 8 DU
+ SG_ cv7 : 48|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ cv8 : 56|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ cv6 : 40|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ cv5 : 32|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ cv4 : 24|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ cv3 : 16|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ cv2 : 8|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ cv1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1233 R_DU_Hardware_version: 8 DU
+ SG_ psn : 40|24@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sn : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ hv4 : 24|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ hv3 : 16|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ hv2 : 8|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ hv1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1232 R_DU_Firmware_version: 8 DU
+ SG_ sn : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ day : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ month : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ year : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ fv4 : 24|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ fv3 : 16|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ fv2 : 8|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ fv1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 1224 R_DU_Cycling_data_6: 8 DU
+ SG_ apwc : 32|8@1+ (0.01,0) [0|0] "Ah/km" Vector__XXX
+ SG_ mt_d : 24|8@1- (2,0) [0|0] "deg C" Vector__XXX
+ SG_ mtq_s : 20|4@1+ (10,0) [0|0] "Nm" Vector__XXX
+ SG_ al_s : 16|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mpw_s : 8|8@1+ (10,0) [0|0] "Watt" Vector__XXX
+ SG_ ast_s : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1223 R_DU_Cycling_data_5: 8 DU
+ SG_ trt : 48|16@1+ (1,0) [0|0] "h" Vector__XXX
+ SG_ trd : 32|16@1+ (1,0) [0|0] "km" Vector__XXX
+ SG_ rtap : 16|16@1+ (1,0) [0|0] "minutes" Vector__XXX
+ SG_ rdap : 0|16@1+ (0.1,0) [0|0] "km" Vector__XXX
+
+BO_ 1222 R_DU_Cycling_data_4: 8 DU
+ SG_ rrdc : 48|16@1+ (1,0) [0|0] "km" Vector__XXX
+ SG_ mrs : 32|16@1+ (1,0) [0|0] "rpm" Vector__XXX
+ SG_ bic : 16|16@1+ (0.01,0) [0|0] "A" Vector__XXX
+ SG_ biv : 0|16@1+ (1,0) [0|0] "mV" Vector__XXX
+
+BO_ 1736 N_DU_Cycling_data_6: 8 DU
+ SG_ apwc : 32|8@1+ (0.01,0) [0|0] "Ah/km" Vector__XXX
+ SG_ mt_d : 24|8@1- (2,0) [0|0] "deg C" Vector__XXX
+ SG_ al_s : 16|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mtq_s : 20|4@1+ (10,0) [0|0] "Nm" Vector__XXX
+ SG_ mpw_s : 8|8@1+ (10,0) [0|0] "Watt" Vector__XXX
+ SG_ ast_s : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1735 N_DU_Cycling_data_5: 8 DU
+ SG_ trt : 48|16@1+ (1,0) [0|0] "h" Vector__XXX
+ SG_ trd : 32|16@1+ (1,0) [0|0] "km" Vector__XXX
+ SG_ rtap : 16|16@1+ (1,0) [0|0] "minutes" Vector__XXX
+ SG_ rdap : 0|16@1+ (0.1,0) [0|0] "km" Vector__XXX
+
+BO_ 1734 N_DU_Cycling_data_4: 8 DU
+ SG_ rrdc : 48|16@1+ (1,0) [0|0] "km" Vector__XXX
+ SG_ mrs : 32|16@1+ (1,0) [0|0] "rpm" Vector__XXX
+ SG_ bic : 16|16@1+ (0.01,0) [0|0] "A" Vector__XXX
+ SG_ biv : 0|16@1+ (1,0) [0|0] "mV" Vector__XXX
+
+BO_ 712 E_DU_Cycling_data_6: 8 DU
+ SG_ apwc : 32|8@1+ (0.01,0) [0|0] "Ah/km" Vector__XXX
+ SG_ mt_d : 24|8@1- (2,0) [0|0] "deg C" Vector__XXX
+ SG_ al_s : 16|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mtq_s : 20|4@1+ (10,0) [0|0] "Nm" Vector__XXX
+ SG_ mpw_s : 8|8@1+ (10,0) [0|0] "Watt" Vector__XXX
+ SG_ ast_s : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 711 E_DU_Cycling_data_5: 8 DU
+ SG_ rtap : 16|16@1+ (1,0) [0|0] "minutes" Vector__XXX
+ SG_ trt : 48|16@1+ (1,0) [0|0] "h" Vector__XXX
+ SG_ trd : 32|16@1+ (1,0) [0|0] "km" Vector__XXX
+ SG_ rdap : 0|16@1+ (0.1,0) [0|0] "km" Vector__XXX
+
+BO_ 710 E_DU_Cycling_data_4: 8 DU
+ SG_ rrdc : 48|16@1+ (1,0) [0|0] "km" Vector__XXX
+ SG_ mrs : 32|16@1+ (1,0) [0|0] "rpm" Vector__XXX
+ SG_ bic : 16|16@1+ (0.01,0) [0|0] "A" Vector__XXX
+ SG_ biv : 0|16@1+ (1,0) [0|0] "mV" Vector__XXX
+
+BO_ 1743 N_DU_Cycling_data_7: 8 DU
+ SG_ hpdc : 32|16@1+ (1,0) [0|0] "Watt" Vector__XXX
+
+BO_ 1231 R_DU_Cycling_data_7: 8 DU
+ SG_ hpdc : 32|16@1+ (1,0) [0|0] "Watt" Vector__XXX
+
+BO_ 719 E_DU_Cycling_data_7: 8 DU
+ SG_ hpdc : 32|16@1+ (1,0) [0|0] "Watt" Vector__XXX
+
+BO_ 1216 R_DU_Error: 8 DU
+ SG_ eval : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ecode : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1220 R_DU_Cycling_data_3: 8 DU
+ SG_ ct_d : 40|8@1- (2,0) [0|0] "deg C" Vector__XXX
+ SG_ pt_d : 16|8@1- (1,0) [0|0] "deg C" Vector__XXX
+ SG_ ot : 0|16@1+ (1,0) [0|0] "hours" Vector__XXX
+
+BO_ 1219 R_DU_Cycling_data_2: 8 DU
+ SG_ od : 48|16@1+ (1,0) [0|0] "km" Vector__XXX
+ SG_ trit : 32|16@1+ (1,0) [0|0] "minutes" Vector__XXX
+ SG_ trid : 16|16@1+ (0.1,0) [0|0] "km" Vector__XXX
+ SG_ rsocv : 8|8@1+ (1,0) [0|0] "%" Vector__XXX
+
+BO_ 1218 R_DU_Cycling_data_1: 8 DU
+ SG_ mpc : 48|16@1+ (0.01,0) [0|0] "A" Vector__XXX
+ SG_ cde : 32|16@1+ (0.1,0) [0|0] " rpm" Vector__XXX
+ SG_ trq : 16|16@1- (0.1,0) [0|0] " Nm" Vector__XXX
+ SG_ spd : 0|16@1+ (0.1,0) [0|0] " km/hr" Vector__XXX
+
+BO_ 1217 R_DU_Cycling_cmd: 8 DU
+ SG_ sls : 24|16@1+ (0.01,0) [0|0] "km/h" Vector__XXX
+ SG_ dcp_s : 22|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sm_s : 20|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ pd_s : 18|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cslp : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 704 E_DU_Error: 8 DU
+ SG_ ecode : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ eval : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 708 E_DU_Cycling_data_3: 8 DU
+ SG_ ct_d : 40|8@1- (2,0) [0|0] "deg C" Vector__XXX
+ SG_ pt_d : 16|8@1- (1,0) [0|0] "deg C" Vector__XXX
+ SG_ ot : 0|16@1+ (1,0) [0|0] "hours" Vector__XXX
+
+BO_ 707 E_DU_Cycling_data_2: 8 DU
+ SG_ trid : 16|16@1+ (0.1,0) [0|0] "km" Vector__XXX
+ SG_ od : 48|16@1+ (1,0) [0|0] "km" Vector__XXX
+ SG_ trit : 32|16@1+ (1,0) [0|0] "minutes" Vector__XXX
+ SG_ rsocv : 8|8@1+ (1,0) [0|0] "%" Vector__XXX
+
+BO_ 706 E_DU_Cycling_data_1: 8 DU
+ SG_ mpc : 48|16@1+ (0.01,0) [0|0] "A" Vector__XXX
+ SG_ cde : 32|16@1+ (0.1,0) [0|0] " rpm" Vector__XXX
+ SG_ trq : 16|16@1- (0.1,0) [0|0] " Nm" Vector__XXX
+ SG_ spd : 0|16@1+ (0.1,0) [0|0] " km/hr" Vector__XXX
+
+BO_ 705 E_DU_Cycling_cmd: 8 DU
+ SG_ pd_s : 18|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sls : 24|16@1+ (0.01,0) [0|0] "km/h" Vector__XXX
+ SG_ sm_s : 20|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ dcp_s : 22|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cslp : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 579 E_SG_Cycling: 8 SG
+ SG_ slc : 40|16@1+ (0.01,0) [0|0] "km/h" Vector__XXX
+
+BO_ 578 E_SG_Display: 8 SG
+ SG_ ast : 40|8@1+ (10,0) [0|0] "%" Vector__XXX
+ SG_ als : 32|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ dcp_c : 4|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mpws : 48|8@1+ (10,0) [0|2550] "W" Vector__XXX
+ SG_ mtqs : 36|4@1+ (10,0) [0|150] "Nm" Vector__XXX
+ SG_ apar : 16|16@1+ (1,0) [0|0] "mm" Vector__XXX
+
+BO_ 577 E_SG_Remote_Control_Cmd: 8 SG
+ SG_ rst_odt : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ tpset : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ b_sta : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sms : 54|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ rst_fh : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ t_sta : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ w_ast : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ rst : 10|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ina_er : 15|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mslp : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ aslp : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ rmod : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ amod : 24|5@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 576 E_SG_Error: 8 SG
+ SG_ eval : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1732 N_DU_Cycling_data_3: 8 DU
+ SG_ ct_d : 40|8@1- (2,0) [0|0] "deg C" Vector__XXX
+ SG_ pt_d : 16|8@1- (1,0) [0|0] "deg C" Vector__XXX
+ SG_ ot : 0|16@1+ (1,0) [0|0] "hours" Vector__XXX
+
+BO_ 1731 N_DU_Cycling_data_2: 8 DU
+ SG_ od : 48|16@1+ (1,0) [0|0] "km" Vector__XXX
+ SG_ trit : 32|16@1+ (1,0) [0|0] "minutes" Vector__XXX
+ SG_ trid : 16|16@1+ (0.1,0) [0|0] "km" Vector__XXX
+ SG_ rsocv : 8|8@1+ (1,0) [0|0] "%" Vector__XXX
+
+BO_ 1730 N_DU_Cycling_data_1: 8 DU
+ SG_ mpc : 48|16@1+ (0.01,0) [0|0] "A" Vector__XXX
+ SG_ cde : 32|16@1+ (0.1,0) [0|0] " rpm" Vector__XXX
+ SG_ trq : 16|16@1- (0.1,0) [0|0] " Nm" Vector__XXX
+ SG_ spd : 0|16@1+ (0.1,0) [0|0] " km/hr" Vector__XXX
+
+BO_ 1729 N_DU_Cycling_cmd: 8 DU
+ SG_ sls : 24|16@1+ (0.01,0) [0|0] "km/h" Vector__XXX
+ SG_ pd_s : 18|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sm_s : 20|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ dcp_s : 22|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cslp : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1728 N_DU_Error: 8 DU
+ SG_ eval : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ecode : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1603 N_SG_Cycling: 8 SG
+ SG_ slc : 40|16@1+ (0.01,0) [0|0] "km/h" Vector__XXX
+
+BO_ 1602 N_SG_Display: 8 SG
+ SG_ ast : 40|8@1+ (10,0) [0|0] "%" Vector__XXX
+ SG_ als : 32|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ dcp_c : 4|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mpws : 48|8@1+ (10,0) [0|2550] "W" Vector__XXX
+ SG_ mtqs : 36|4@1+ (10,0) [0|150] "Nm" Vector__XXX
+ SG_ apar : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1921 N_BAT_Capacity: 8 BAT
+ SG_ rc_remain_capacity : 8|16@1+ (1,0) [0|0] " mAh" Vector__XXX
+ SG_ rsoc : 0|8@1+ (1,0) [0|255] "%" Vector__XXX
+
+BO_ 1600 N_SG_Error: 8 SG
+ SG_ eval : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1601 N_SG_Remote_Control_Cmd: 8 SG
+ SG_ rst_odt : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ sms : 54|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ tpset : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ rst_fh : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ t_sta : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ b_sta : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ w_ast : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ rst : 10|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ina_er : 15|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mslp : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ aslp : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ rmod : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ amod : 24|5@1+ (1,0) [0|0] "" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+VAL_ 3221225472 num_s 5 "20 S" 4 "17 S" 3 "16 S" 2 "13 S" 1 "12 S" 0 "10 S" ;
+VAL_ 3221225472 num_p 4 "5 P" 3 "4 P" 2 "3 P" 1 "2 P" 0 "1 P" ;
+VAL_ 3221225472 c_type 4 "2270 A (5.55Ah)" 3 "2170 G (5.15Ah)" 2 "18650 GA (3.45Ah)" 1 "18650 PF (2.9Ah)" 0 "18650 AA (2.2 Ah)" ;
+VAL_ 3221225472 sep_csta 4 "Suspend" 2 "Charge" 1 "Neutral" 0 "Discharge" ;
+VAL_ 3221225472 ep_csta 4 "Suspend" 2 "Charge" 1 "Neutral" 0 "Discharge" ;
+VAL_ 3221225472 sep_sx 1 "Back Default" 0 "Fellow sta" ;
+VAL_ 3221225472 sep_sta 2 "State D-1" 1 "State F" 0 "State C-1" ;
+VAL_ 3221225472 sep_pd 1 "Pre-Discharge On" 0 "Pre-Discharge Off" ;
+VAL_ 3221225472 ep_sx 1 "Back Default" 0 "Fellow sta" ;
+VAL_ 3221225472 ep_sta 2 "State D-1" 1 "State F" 0 "State C-1" ;
+VAL_ 3221225472 ep_pd 1 "Pre-Discharge On" 0 "Pre-Discharge Off" ;
+VAL_ 3221225472 ast 13 "Off" 12 "rvd" 11 "Eco 50%" 10 "Tou 75%" 9 "Tour+ 100%" 8 "Normal 125%" 7 "Normal+ 150%" 6 "Climb 175%" 5 "Climb+ 200%" 4 "Power 250%" 3 "Power+ 300%" 2 "Boost 350%" 1 "Boost+ 360%" 0 "rvd" ;
+VAL_ 3221225472 Light 1 "On" 0 "Off" ;
+VAL_ 3221225472 eval 1 "Error Occurs" ;
+VAL_ 3221225472 c_status 1 "Charge" 0 "Non-charge" ;
+VAL_ 3221225472 c_state 0 "C-Discharge" 2 "C-Charge" 4 "C-Suspend" 1 "C-Neutral" ;
+VAL_ 3221225472 cap_l 3 "Lv0 rsoc = 0%" 2 "Lv1 rsoc = 3~1%" 1 "Lv2 rsoc = 8~4%" 0 "Other rsoc >= 9%" ;
+VAL_ 3221225472 d_ecode 169 "A9_Discharge error State E" 0 "No error" ;
+VAL_ 3221225472 d_state 2 "State D-1" 1 "State F" 0 "State C-1" ;
+VAL_ 3221225472 d_status 1 "Discharge" 0 "Non discharge" ;
+VAL_ 3221225472 func 1 "Smart charge" 0 "No smart charge" ;
+VAL_ 3221225472 c_stb_Charge_standby 1 "Yes" 0 "No" ;
+VAL_ 3221225472 c_sta_Charge_status 1 "On charging" 0 "No charging" ;
+VAL_ 3221225472 bmse_BMS_error 1 "With error" 0 "Without error" ;
+VAL_ 3221225472 nor_ch_Normal_charge 1 "Yes" 0 "No" ;
+VAL_ 3221225472 pre_ch_Pre_charge 1 "Yes" 0 "No" ;
+VAL_ 3221225472 no_ch_No_charge 1 "Yes" 0 "No" ;
+VAL_ 3221225472 ht_ch_High_temp_charge 1 "Yes" 0 "No" ;
+VAL_ 3221225472 sep_dsta 2 "State D-1" 1 "State F" 0 "State C-1" ;
+VAL_ 3221225472 ep_dsta 2 "State D-1" 1 "State F" 0 "State C-1" ;
+VAL_ 1216 eval 1 "Error Occurs" ;
+VAL_ 704 eval 1 "Error Occurs" ;
+VAL_ 577 rmod 1 "Riding mode" ;
+VAL_ 576 eval 1 "Error Occurs" ;
+VAL_ 1728 eval 1 "Error Occurs" ;
+VAL_ 1600 eval 1 "Error Occurs" ;
+VAL_ 1601 rmod 1 "Riding mode" ;
+SIG_GROUP_ 577 SG_Copy_1 1 :;
+SIG_GROUP_ 1601 SG 1 :;
+
