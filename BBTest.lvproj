@@ -521,7 +521,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/D/builds/BBSS Build/BBSS</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{1DE9EE1F-C3B5-4DD3-A0FF-351A0AD88834}</Property>
-				<Property Name="Bld_version.build" Type="Int">18</Property>
+				<Property Name="Bld_version.build" Type="Int">19</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">BBTest.exe</Property>
@@ -534,7 +534,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/JOIN.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{FF2B346F-B11B-4285-979D-F0CF73848F64}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{BB7A76D5-0227-4CBE-B85A-E478750ADC53}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/MainFormLauncher.vi</Property>
@@ -639,18 +639,18 @@
 				<Property Name="TgtF_targetfileGUID" Type="Str">{489BD891-A53D-4FF6-851F-CD81C81D57A0}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">BBTest.exe</Property>
 			</Item>
-			<Item Name="BBTest Installer V1.0.1.18 (Update Version)" Type="Installer">
+			<Item Name="BBTest Installer V1.0.1.19 (Update Version)" Type="Installer">
 				<Property Name="Destination[0].name" Type="Str">c:\BBTest</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/BBTest</Property>
 				<Property Name="Destination[0].tag" Type="Str">{58B0694A-4DF1-4C59-879B-1E5A52DD0962}</Property>
 				<Property Name="Destination[0].type" Type="Str">absFolder</Property>
 				<Property Name="DestinationCount" Type="Int">1</Property>
-				<Property Name="INST_buildLocation" Type="Path">/D/builds/BBSS Build/BBTest Installer V1.0.1.18 (Update Version)</Property>
-				<Property Name="INST_buildSpecName" Type="Str">BBTest Installer V1.0.1.18 (Update Version)</Property>
+				<Property Name="INST_buildLocation" Type="Path">/D/builds/BBSS Build/BBTest Installer V1.0.1.19 (Update Version)</Property>
+				<Property Name="INST_buildSpecName" Type="Str">BBTest Installer V1.0.1.19 (Update Version)</Property>
 				<Property Name="INST_defaultDir" Type="Str">{58B0694A-4DF1-4C59-879B-1E5A52DD0962}</Property>
 				<Property Name="INST_installerName" Type="Str">setup.exe</Property>
 				<Property Name="INST_productName" Type="Str">BBTest</Property>
-				<Property Name="INST_productVersion" Type="Str">0.1.18</Property>
+				<Property Name="INST_productVersion" Type="Str">0.1.19</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">24108000</Property>
 				<Property Name="MSI_distID" Type="Str">{FD39717B-DD86-40A5-97EC-57CD1D1F7263}</Property>
