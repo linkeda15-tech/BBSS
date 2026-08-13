@@ -534,7 +534,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/JOIN.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{56E8549F-A394-4595-B915-C0895EA94FBA}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B2735A27-6BA6-40C7-89B1-C3E5D15ADDA7}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/MainFormLauncher.vi</Property>
@@ -651,7 +651,7 @@
 				<Property Name="INST_defaultDir" Type="Str">{58B0694A-4DF1-4C59-879B-1E5A52DD0962}</Property>
 				<Property Name="INST_installerName" Type="Str">setup.exe</Property>
 				<Property Name="INST_productName" Type="Str">BBTest</Property>
-				<Property Name="INST_productVersion" Type="Str">0.1.20</Property>
+				<Property Name="INST_productVersion" Type="Str">0.1.22</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">24108000</Property>
 				<Property Name="MSI_distID" Type="Str">{FD39717B-DD86-40A5-97EC-57CD1D1F7263}</Property>
